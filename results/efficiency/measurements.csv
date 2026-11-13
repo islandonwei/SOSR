@@ -1,0 +1,8 @@
+name,latency_display_ms,storage_GB_display,queries_per_repeat,repeats,sampling
+XLM-R (paper: BERT),3.3,1.13,1245,3,all 1245 test requirements; earlier measurement
+Sentence-T,3.3,1.13,1245,3,all 1245 test requirements; earlier measurement
+HSM,3.4,1.13,1245,3,all 1245 test requirements; earlier measurement
+Qwen-Zero,29551.5,15.24,24,3,fixed stratified subset; mean weighted by the 1245-test-set level distribution
+Qwen-Few,29847.7,15.24,24,3,fixed stratified subset; mean weighted by the 1245-test-set level distribution
+Qwen-City-Zero,29550.8,15.24,24,3,fixed stratified subset; mean weighted by the 1245-test-set level distribution
+Qwen-City-Few,29847.9,15.24,24,3,fixed stratified subset; mean weighted by the 1245-test-set level distribution

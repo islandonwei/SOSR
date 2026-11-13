@@ -1,0 +1,6828 @@
+{
+  "complete": true,
+  "unique_queries": 1800,
+  "measurement_records": 21600,
+  "timeout_budget_ms": 30000.0,
+  "primary_quantiles": "Nearest-rank quantiles over per-query median of three paired repetitions. Censored values remain unknown above budget; null quantile means >30000ms.",
+  "timeout_rate": "Timed-out runs / all runs, with any-timeout query count also reported.",
+  "timing_scope": "Distance plus ordered service-vertex reconstruction; no full road-walk recovery or HSM.",
+  "DROMC_identity": "Existing Candidate-A* implementation retained at explicit user request; not a verified reproduction of the cited full DROMC algorithm.",
+  "results": [
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 16055.992086,
+      "p95_ms": 16279.387758,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3832,
+      "candidate_count_median": 5868.0,
+      "candidate_count_max": 9451,
+      "per_layer_counts": [
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 16033.889018,
+          "p95_ms": 16255.032137,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 16068.563331,
+          "p95_ms": 16295.476758,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 16118.162772,
+          "p95_ms": 16400.564041,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 111454859.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 138.664068,
+      "p95_ms": 892.342746,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3832,
+      "candidate_count_median": 5868.0,
+      "candidate_count_max": 9451,
+      "per_layer_counts": [
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 138.664068,
+          "p95_ms": 892.342746,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 138.198033,
+          "p95_ms": 890.36116,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 139.463701,
+          "p95_ms": 896.287509,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 792004.5
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 166.561291,
+      "p95_ms": 198.431692,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3832,
+      "candidate_count_median": 5868.0,
+      "candidate_count_max": 9451,
+      "per_layer_counts": [
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 166.90875,
+          "p95_ms": 198.708984,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 166.561291,
+          "p95_ms": 198.431692,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 166.094486,
+          "p95_ms": 197.813022,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 981437.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 2445656.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 153,
+      "timeout_rate_runs": 0.51,
+      "queries_with_any_timeout": 51,
+      "queries_with_censored_median": 51,
+      "candidate_count_min": 3832,
+      "candidate_count_median": 5868.0,
+      "candidate_count_max": 9451,
+      "per_layer_counts": [
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        },
+        {
+          "min": 3832,
+          "median": 5868.0,
+          "max": 9451
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 51,
+          "timeout_rate": 0.51
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 51,
+          "timeout_rate": 0.51
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 51,
+          "timeout_rate": 0.51
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 147,
+          "median": 19218
+        },
+        "pair_evaluations": {
+          "completed_runs": 147,
+          "median": 9036932
+        },
+        "refinements": {
+          "completed_runs": 147,
+          "median": 7
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.451368,
+      "p95_ms": 0.465888,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5,
+      "candidate_count_median": 6.0,
+      "candidate_count_max": 11,
+      "per_layer_counts": [
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.452508,
+          "p95_ms": 0.466199,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.449538,
+          "p95_ms": 0.463879,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.451855,
+          "p95_ms": 0.469595,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 245.5
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.378827,
+      "p95_ms": 0.406374,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5,
+      "candidate_count_median": 6.0,
+      "candidate_count_max": 11,
+      "per_layer_counts": [
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.373766,
+          "p95_ms": 0.403577,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.379768,
+          "p95_ms": 0.411968,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.381974,
+          "p95_ms": 0.408645,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 165.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 147.177933,
+      "p95_ms": 173.800572,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5,
+      "candidate_count_median": 6.0,
+      "candidate_count_max": 11,
+      "per_layer_counts": [
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 147.177933,
+          "p95_ms": 174.39332,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 147.913917,
+          "p95_ms": 174.262091,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 147.004596,
+          "p95_ms": 173.087372,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 964006.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 2409909.5
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.342513,
+      "p95_ms": 0.417808,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5,
+      "candidate_count_median": 6.0,
+      "candidate_count_max": 11,
+      "per_layer_counts": [
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        },
+        {
+          "min": 5,
+          "median": 6.0,
+          "max": 11
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.335696,
+          "p95_ms": 0.414958,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.344997,
+          "p95_ms": 0.412998,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.348204,
+          "p95_ms": 0.422225,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 75.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 136.0
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 2.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 76.697164,
+      "p95_ms": 81.232013,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 231,
+      "candidate_count_median": 539.0,
+      "candidate_count_max": 565,
+      "per_layer_counts": [
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 76.532872,
+          "p95_ms": 81.232013,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 76.793636,
+          "p95_ms": 81.530577,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 76.483607,
+          "p95_ms": 81.807738,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 564381.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 6.439505,
+      "p95_ms": 10.354601,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 231,
+      "candidate_count_median": 539.0,
+      "candidate_count_max": 565,
+      "per_layer_counts": [
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 6.352928,
+          "p95_ms": 10.15553,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 6.439505,
+          "p95_ms": 10.354601,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 6.44452,
+          "p95_ms": 10.410233,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 24225.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 154.719494,
+      "p95_ms": 182.687574,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 231,
+      "candidate_count_median": 539.0,
+      "candidate_count_max": 565,
+      "per_layer_counts": [
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 154.758673,
+          "p95_ms": 182.321783,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 155.452807,
+          "p95_ms": 184.802849,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 154.053224,
+          "p95_ms": 182.496349,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 978344.0
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 2439917.0
+        }
+      }
+    },
+    {
+      "dataset": "BAY",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 10.809331,
+      "p95_ms": 547.284775,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 231,
+      "candidate_count_median": 539.0,
+      "candidate_count_max": 565,
+      "per_layer_counts": [
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        },
+        {
+          "min": 231,
+          "median": 539.0,
+          "max": 565
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 10.809331,
+          "p95_ms": 547.284775,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 10.818901,
+          "p95_ms": 545.035124,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 10.803356,
+          "p95_ms": 549.323118,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 1413.5
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 167019.5
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 4.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 9287.916567,
+      "p95_ms": 9423.870582,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 1546,
+      "candidate_count_median": 3965.0,
+      "candidate_count_max": 6616,
+      "per_layer_counts": [
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 9206.878974,
+          "p95_ms": 9350.168529,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 9265.020762,
+          "p95_ms": 9448.430579,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 9347.886838,
+          "p95_ms": 9499.253775,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 41906007.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 318.113733,
+      "p95_ms": 2042.4147,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 1546,
+      "candidate_count_median": 3965.0,
+      "candidate_count_max": 6616,
+      "per_layer_counts": [
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 321.215814,
+          "p95_ms": 2023.040774,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 317.97918,
+          "p95_ms": 2040.477124,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 318.113733,
+          "p95_ms": 2059.642938,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 1339861.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 229.628306,
+      "p95_ms": 274.293004,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 1546,
+      "candidate_count_median": 3965.0,
+      "candidate_count_max": 6616,
+      "per_layer_counts": [
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 230.789719,
+          "p95_ms": 276.937504,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 229.423293,
+          "p95_ms": 272.586478,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 230.002911,
+          "p95_ms": 274.293004,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 1346981.0
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 3274299.5
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 15468.448493,
+      "p95_ms": null,
+      "timeout_runs": 132,
+      "timeout_rate_runs": 0.44,
+      "queries_with_any_timeout": 44,
+      "queries_with_censored_median": 44,
+      "candidate_count_min": 1546,
+      "candidate_count_median": 3965.0,
+      "candidate_count_max": 6616,
+      "per_layer_counts": [
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        },
+        {
+          "min": 1546,
+          "median": 3965.0,
+          "max": 6616
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 15505.874717,
+          "p95_ms": null,
+          "timeouts": 44,
+          "timeout_rate": 0.44
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 15468.448493,
+          "p95_ms": null,
+          "timeouts": 44,
+          "timeout_rate": 0.44
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 15462.997753,
+          "p95_ms": null,
+          "timeouts": 44,
+          "timeout_rate": 0.44
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 168,
+          "median": 12218.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 168,
+          "median": 3629389.5
+        },
+        "refinements": {
+          "completed_runs": 168,
+          "median": 5.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.50026,
+      "p95_ms": 0.5295,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 8,
+      "candidate_count_median": 10.0,
+      "candidate_count_max": 10,
+      "per_layer_counts": [
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.4952,
+          "p95_ms": 0.52463,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.498669,
+          "p95_ms": 0.533369,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.50166,
+          "p95_ms": 0.53078,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 424.5
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.437668,
+      "p95_ms": 0.4778,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 8,
+      "candidate_count_median": 10.0,
+      "candidate_count_max": 10,
+      "per_layer_counts": [
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.427139,
+          "p95_ms": 0.470329,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.438458,
+          "p95_ms": 0.480589,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.440339,
+          "p95_ms": 0.479201,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 303.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 168.351281,
+      "p95_ms": 229.348057,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 8,
+      "candidate_count_median": 10.0,
+      "candidate_count_max": 10,
+      "per_layer_counts": [
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 168.798938,
+          "p95_ms": 230.703555,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 168.71658,
+          "p95_ms": 229.348057,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 168.351281,
+          "p95_ms": 229.157238,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 1042948.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 2569039.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.40673,
+      "p95_ms": 0.509709,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 8,
+      "candidate_count_median": 10.0,
+      "candidate_count_max": 10,
+      "per_layer_counts": [
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        },
+        {
+          "min": 8,
+          "median": 10.0,
+          "max": 10
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.400358,
+          "p95_ms": 0.50149,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.405777,
+          "p95_ms": 0.509709,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.40773,
+          "p95_ms": 0.51226,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 129.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 414.0
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 3.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 27.334326,
+      "p95_ms": 29.117946,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 138,
+      "candidate_count_median": 167.0,
+      "candidate_count_max": 339,
+      "per_layer_counts": [
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 27.409801,
+          "p95_ms": 29.198107,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 27.334326,
+          "p95_ms": 29.091444,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 27.373409,
+          "p95_ms": 29.212153,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 129175.5
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 7.579974,
+      "p95_ms": 9.520659,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 138,
+      "candidate_count_median": 167.0,
+      "candidate_count_max": 339,
+      "per_layer_counts": [
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 7.556931,
+          "p95_ms": 9.44458,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 7.585854,
+          "p95_ms": 9.520659,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 7.650089,
+          "p95_ms": 9.60176,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 23855.0
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 214.292689,
+      "p95_ms": 258.967147,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 138,
+      "candidate_count_median": 167.0,
+      "candidate_count_max": 339,
+      "per_layer_counts": [
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 215.240857,
+          "p95_ms": 258.967147,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 214.292689,
+          "p95_ms": 254.553133,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 213.414436,
+          "p95_ms": 258.857001,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 1315380.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 3210867.5
+        }
+      }
+    },
+    {
+      "dataset": "COL",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 6.544192,
+      "p95_ms": 79.779366,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 138,
+      "candidate_count_median": 167.0,
+      "candidate_count_max": 339,
+      "per_layer_counts": [
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        },
+        {
+          "min": 138,
+          "median": 167.0,
+          "max": 339
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 6.544192,
+          "p95_ms": 79.779366,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 6.555436,
+          "p95_ms": 79.710794,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 6.573025,
+          "p95_ms": 79.945304,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 747.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 107481.0
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 3.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 68.383829,
+      "p95_ms": 85.701673,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 67.843277,
+          "p95_ms": 87.018703,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 68.18313,
+          "p95_ms": 85.534351,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 68.383829,
+          "p95_ms": 86.407123,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 148554.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 7.293965,
+      "p95_ms": 37.900567,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 7.298879,
+          "p95_ms": 38.057743,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 7.293965,
+          "p95_ms": 37.71741,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 7.260781,
+          "p95_ms": 37.900567,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 6351.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 208.302989,
+      "p95_ms": 352.324471,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 207.96824,
+          "p95_ms": 354.183686,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 208.302989,
+          "p95_ms": 352.324471,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 208.702172,
+          "p95_ms": 352.145882,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 1123042.5
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 2859554.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 26.166836,
+      "p95_ms": 258.985932,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 26.166836,
+          "p95_ms": 256.203175,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 26.154537,
+          "p95_ms": 258.985932,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 26.193023,
+          "p95_ms": 259.456216,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 19189.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 373399.0
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 19.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.271705,
+      "p95_ms": 0.356557,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.275686,
+          "p95_ms": 0.363897,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.269565,
+          "p95_ms": 0.356077,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.273056,
+          "p95_ms": 0.368107,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 107.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.267766,
+      "p95_ms": 0.347837,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.278466,
+          "p95_ms": 0.353747,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.275295,
+          "p95_ms": 0.342137,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.274216,
+          "p95_ms": 0.369448,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 40.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 203.924269,
+      "p95_ms": 321.956392,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 202.922448,
+          "p95_ms": 318.554176,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 203.924269,
+          "p95_ms": 324.752966,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 202.780592,
+          "p95_ms": 321.956392,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 1112735.5
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 2833884.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.364387,
+      "p95_ms": 0.458969,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.363427,
+          "p95_ms": 0.45661,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.364387,
+          "p95_ms": 0.4843,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.375648,
+          "p95_ms": 0.458969,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 110.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 30.0
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 2.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 5.378916,
+      "p95_ms": 7.453407,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 5.363659,
+          "p95_ms": 7.38372,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 5.372986,
+          "p95_ms": 7.453407,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 5.380251,
+          "p95_ms": 7.458735,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 9196.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 1.543561,
+      "p95_ms": 4.292559,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 1.523201,
+          "p95_ms": 4.300707,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 1.54158,
+          "p95_ms": 4.271654,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 1.549612,
+          "p95_ms": 4.292559,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 819.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 204.753793,
+      "p95_ms": 335.309849,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 203.351967,
+          "p95_ms": 335.801974,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 204.753793,
+          "p95_ms": 336.554069,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 203.911939,
+          "p95_ms": 334.297125,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 1119441.5
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 2851141.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 2.743854,
+      "p95_ms": 4.487498,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 2.738586,
+          "p95_ms": 4.473961,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 2.743854,
+          "p95_ms": 4.487498,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 2.755867,
+          "p95_ms": 4.489833,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 1242.5
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 3338.0
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 3.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 300,
+      "timeout_rate_runs": 1.0,
+      "queries_with_any_timeout": 100,
+      "queries_with_censored_median": 100,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 100,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 100,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 100,
+          "timeout_rate": 1.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 0,
+          "median": null
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 804.943074,
+      "p95_ms": 7119.784853,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 804.804486,
+          "p95_ms": 7118.030057,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 804.943074,
+          "p95_ms": 7119.784853,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 805.756806,
+          "p95_ms": 7121.463454,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 3693599.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 627.799784,
+      "p95_ms": 781.531679,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 626.485018,
+          "p95_ms": 781.531679,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 626.764448,
+          "p95_ms": 781.271991,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 627.906407,
+          "p95_ms": 785.30816,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 3261312.0
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 8270702.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 180,
+      "timeout_rate_runs": 0.6,
+      "queries_with_any_timeout": 60,
+      "queries_with_censored_median": 60,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 19120.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 60,
+          "timeout_rate": 0.6
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 60,
+          "timeout_rate": 0.6
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 60,
+          "timeout_rate": 0.6
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 120,
+          "median": 49133.5
+        },
+        "pair_evaluations": {
+          "completed_runs": 120,
+          "median": 12268788.5
+        },
+        "refinements": {
+          "completed_runs": 120,
+          "median": 6.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.857168,
+      "p95_ms": 0.892518,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.858837,
+          "p95_ms": 0.896706,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.85849,
+          "p95_ms": 0.89209,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.856498,
+          "p95_ms": 0.892518,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 806.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.789578,
+      "p95_ms": 0.865059,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.792555,
+          "p95_ms": 0.869437,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.787658,
+          "p95_ms": 0.865059,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.783807,
+          "p95_ms": 0.867239,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 557.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 539.96271,
+      "p95_ms": 673.995226,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 539.0663,
+          "p95_ms": 672.626268,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 539.96271,
+          "p95_ms": 674.843802,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 540.703088,
+          "p95_ms": 673.995226,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 3063738.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 7799466.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.569512,
+      "p95_ms": 0.643724,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.569025,
+          "p95_ms": 0.649749,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.566863,
+          "p95_ms": 0.651935,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.569512,
+          "p95_ms": 0.650264,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 103.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 651.5
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 2.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 793.57632,
+      "p95_ms": 804.321236,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 797.187504,
+          "p95_ms": 806.861467,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 794.1389,
+          "p95_ms": 808.577133,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 791.284171,
+          "p95_ms": 802.409302,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 3463776.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 12.720803,
+      "p95_ms": 31.693541,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 12.720803,
+          "p95_ms": 31.693541,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 12.674772,
+          "p95_ms": 32.214009,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 12.800008,
+          "p95_ms": 31.049441,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 36319.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 585.381227,
+      "p95_ms": 724.443769,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 585.698053,
+          "p95_ms": 723.579353,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 586.480173,
+          "p95_ms": 726.562082,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 585.002145,
+          "p95_ms": 724.443769,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 3268059.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 8292215.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 74.807084,
+      "p95_ms": 13749.097527,
+      "timeout_runs": 9,
+      "timeout_rate_runs": 0.03,
+      "queries_with_any_timeout": 3,
+      "queries_with_censored_median": 3,
+      "candidate_count_min": 573,
+      "candidate_count_median": 1137.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 74.977252,
+          "p95_ms": 13869.767814,
+          "timeouts": 3,
+          "timeout_rate": 0.03
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 74.695392,
+          "p95_ms": 13749.097527,
+          "timeouts": 3,
+          "timeout_rate": 0.03
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 74.807084,
+          "p95_ms": 13655.581059,
+          "timeouts": 3,
+          "timeout_rate": 0.03
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 291,
+          "median": 3454
+        },
+        "pair_evaluations": {
+          "completed_runs": 291,
+          "median": 1024349
+        },
+        "refinements": {
+          "completed_runs": 291,
+          "median": 6
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 150,
+      "timeout_rate_runs": 1.0,
+      "queries_with_any_timeout": 50,
+      "queries_with_censored_median": 50,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 20017.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 20733
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 50,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 50,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 50,
+          "timeout_rate": 1.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 0,
+          "median": null
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 4353.783533,
+      "p95_ms": null,
+      "timeout_runs": 9,
+      "timeout_rate_runs": 0.06,
+      "queries_with_any_timeout": 3,
+      "queries_with_censored_median": 3,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 20017.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 20733
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 4441.681602,
+          "p95_ms": null,
+          "timeouts": 3,
+          "timeout_rate": 0.06
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 4353.783533,
+          "p95_ms": null,
+          "timeouts": 3,
+          "timeout_rate": 0.06
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 4327.334874,
+          "p95_ms": null,
+          "timeouts": 3,
+          "timeout_rate": 0.06
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 141,
+          "median": 16738222
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 1054.72654,
+      "p95_ms": 1192.176454,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 20017.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 20733
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 1057.193105,
+          "p95_ms": 1206.70576,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 1053.734471,
+          "p95_ms": 1190.879468,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 1054.094284,
+          "p95_ms": 1192.176454,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 5402389.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 13705919.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 99,
+      "timeout_rate_runs": 0.66,
+      "queries_with_any_timeout": 33,
+      "queries_with_censored_median": 33,
+      "candidate_count_min": 6029,
+      "candidate_count_median": 20017.0,
+      "candidate_count_max": 23886,
+      "per_layer_counts": [
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 20375.0,
+          "max": 23886
+        },
+        {
+          "min": 6029,
+          "median": 19568.5,
+          "max": 20733
+        },
+        {
+          "min": 6029,
+          "median": 19120.0,
+          "max": 23886
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 33,
+          "timeout_rate": 0.66
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 33,
+          "timeout_rate": 0.66
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 33,
+          "timeout_rate": 0.66
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 51,
+          "median": 89888
+        },
+        "pair_evaluations": {
+          "completed_runs": 51,
+          "median": 50149595
+        },
+        "refinements": {
+          "completed_runs": 51,
+          "median": 4
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 1.521556,
+      "p95_ms": 1.566882,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 1.525726,
+          "p95_ms": 1.571717,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 1.518511,
+          "p95_ms": 1.566882,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 1.519631,
+          "p95_ms": 1.569303,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 2412.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 1.229191,
+      "p95_ms": 1.345928,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 1.230761,
+          "p95_ms": 1.349392,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 1.224074,
+          "p95_ms": 1.337207,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 1.227475,
+          "p95_ms": 1.345928,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 1124.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 906.180908,
+      "p95_ms": 1027.822773,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 908.949007,
+          "p95_ms": 1027.822773,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 906.180908,
+          "p95_ms": 1029.091914,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 906.637548,
+          "p95_ms": 1026.800832,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 5117368.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 12983999.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.740993,
+      "p95_ms": 0.855527,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 9,
+      "candidate_count_median": 14.0,
+      "candidate_count_max": 21,
+      "per_layer_counts": [
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        },
+        {
+          "min": 9,
+          "median": 14.0,
+          "max": 21
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.740993,
+          "p95_ms": 0.857774,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.737475,
+          "p95_ms": 0.855527,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.727675,
+          "p95_ms": 0.856618,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 173.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 1557.0
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 3.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 2083.682618,
+      "p95_ms": 2136.245031,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 882.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 882.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 2090.392422,
+          "p95_ms": 2136.245031,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 2097.142481,
+          "p95_ms": 2159.686787,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 2063.777903,
+          "p95_ms": 2100.724296,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 9083990.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 30.690448,
+      "p95_ms": 79.857654,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 882.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 882.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 30.721303,
+          "p95_ms": 79.857654,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 30.554586,
+          "p95_ms": 79.106989,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 31.004635,
+          "p95_ms": 79.967358,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 110179.5
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 966.548852,
+      "p95_ms": 1089.519471,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 573,
+      "candidate_count_median": 882.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 882.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 967.193549,
+          "p95_ms": 1087.347173,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 966.548852,
+          "p95_ms": 1089.860744,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 966.528175,
+          "p95_ms": 1089.519471,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 5406590.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 13718459.0
+        }
+      }
+    },
+    {
+      "dataset": "FLA",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 191.573143,
+      "p95_ms": 12519.772575,
+      "timeout_runs": 3,
+      "timeout_rate_runs": 0.02,
+      "queries_with_any_timeout": 1,
+      "queries_with_censored_median": 1,
+      "candidate_count_min": 573,
+      "candidate_count_median": 882.0,
+      "candidate_count_max": 1641,
+      "per_layer_counts": [
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 1137.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 882.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        },
+        {
+          "min": 573,
+          "median": 642.0,
+          "max": 1641
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 191.438959,
+          "p95_ms": 12519.772575,
+          "timeouts": 1,
+          "timeout_rate": 0.02
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 191.573143,
+          "p95_ms": 12531.253792,
+          "timeouts": 1,
+          "timeout_rate": 0.02
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 191.578718,
+          "p95_ms": 12487.216002,
+          "timeouts": 1,
+          "timeout_rate": 0.02
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 147,
+          "median": 4982
+        },
+        "pair_evaluations": {
+          "completed_runs": 147,
+          "median": 2682347
+        },
+        "refinements": {
+          "completed_runs": 147,
+          "median": 6
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 27.93295,
+      "p95_ms": 39.040177,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 28.27062,
+          "p95_ms": 38.958235,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 27.918626,
+          "p95_ms": 38.735198,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 27.777116,
+          "p95_ms": 39.529332,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 63647.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 4.919289,
+      "p95_ms": 18.972999,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 4.922705,
+          "p95_ms": 18.972999,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 4.961802,
+          "p95_ms": 18.93742,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 4.92404,
+          "p95_ms": 19.068144,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 5670.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 53.028349,
+      "p95_ms": 95.896884,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 53.028349,
+          "p95_ms": 96.056926,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 53.032174,
+          "p95_ms": 95.881016,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 53.124033,
+          "p95_ms": 95.896884,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 279198.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 780011.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 11.249112,
+      "p95_ms": 94.120231,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 11.405138,
+          "p95_ms": 87.419556,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 11.249112,
+          "p95_ms": 95.069749,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 11.199292,
+          "p95_ms": 94.120231,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 9413.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 55157.5
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 4.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.149873,
+      "p95_ms": 0.159984,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.147613,
+          "p95_ms": 0.159133,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.150083,
+          "p95_ms": 0.164833,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.151214,
+          "p95_ms": 0.164264,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 31.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.142663,
+      "p95_ms": 0.155053,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.139672,
+          "p95_ms": 0.152573,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.143553,
+          "p95_ms": 0.155834,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.144904,
+          "p95_ms": 0.161084,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 16.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 56.242779,
+      "p95_ms": 80.31896,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 56.249083,
+          "p95_ms": 80.31896,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 55.967917,
+          "p95_ms": 80.378921,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 56.242779,
+          "p95_ms": 80.016107,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 300572.5
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 860386.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.224024,
+      "p95_ms": 0.264667,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.220303,
+          "p95_ms": 0.261134,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.223334,
+          "p95_ms": 0.271336,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.223786,
+          "p95_ms": 0.270046,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 55.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 7.0
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 1.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 2.04503,
+      "p95_ms": 2.613283,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 2.040865,
+          "p95_ms": 2.631066,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 2.045683,
+          "p95_ms": 2.613283,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 2.04552,
+          "p95_ms": 2.597463,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 4266.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.794269,
+      "p95_ms": 1.841884,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.797043,
+          "p95_ms": 1.789051,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.793617,
+          "p95_ms": 1.842628,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.794269,
+          "p95_ms": 1.857545,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 469.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 52.450293,
+      "p95_ms": 92.275288,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 52.544849,
+          "p95_ms": 92.275288,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 52.450293,
+          "p95_ms": 92.268953,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 52.445776,
+          "p95_ms": 91.662701,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 280081.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 777660.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 1,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 1.19766,
+      "p95_ms": 1.763523,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 1.204681,
+          "p95_ms": 1.74976,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 1.197895,
+          "p95_ms": 1.775177,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 1.19766,
+          "p95_ms": 1.763523,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 587.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 1108.5
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 2.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 300,
+      "timeout_rate_runs": 1.0,
+      "queries_with_any_timeout": 100,
+      "queries_with_censored_median": 100,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 100,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 100,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 100,
+          "timeout_rate": 1.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 0,
+          "median": null
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 363.307405,
+      "p95_ms": 3670.405936,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 363.364878,
+          "p95_ms": 3803.672107,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 363.307405,
+          "p95_ms": 3650.81707,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 362.542743,
+          "p95_ms": 3670.405936,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 1941925.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 147.938749,
+      "p95_ms": 181.055707,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 147.812958,
+          "p95_ms": 182.361522,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 148.004959,
+          "p95_ms": 180.185406,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 148.279289,
+          "p95_ms": 181.055707,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 808508.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 2247135.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 153,
+      "timeout_rate_runs": 0.51,
+      "queries_with_any_timeout": 51,
+      "queries_with_censored_median": 51,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9361.0,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 51,
+          "timeout_rate": 0.51
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 51,
+          "timeout_rate": 0.51
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 51,
+          "timeout_rate": 0.51
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 147,
+          "median": 27236
+        },
+        "pair_evaluations": {
+          "completed_runs": 147,
+          "median": 7342818
+        },
+        "refinements": {
+          "completed_runs": 147,
+          "median": 5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.299665,
+      "p95_ms": 0.313875,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.296335,
+          "p95_ms": 0.312196,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.302616,
+          "p95_ms": 0.316917,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.300485,
+          "p95_ms": 0.316916,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 94.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.272776,
+      "p95_ms": 0.283126,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.267115,
+          "p95_ms": 0.279035,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.272796,
+          "p95_ms": 0.286357,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.276385,
+          "p95_ms": 0.290086,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 75.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 111.115467,
+      "p95_ms": 133.883632,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 111.515915,
+          "p95_ms": 134.412126,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 110.937903,
+          "p95_ms": 133.737318,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 110.632561,
+          "p95_ms": 133.883632,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 649541.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 1881552.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 0.276665,
+      "p95_ms": 0.338586,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 0.272465,
+          "p95_ms": 0.337496,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 0.278496,
+          "p95_ms": 0.334847,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 0.281495,
+          "p95_ms": 0.341207,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 62.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 63.0
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 2.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 165.401032,
+      "p95_ms": 174.764213,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 165.401032,
+          "p95_ms": 176.45686,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 166.181983,
+          "p95_ms": 174.566194,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 165.14379,
+          "p95_ms": 174.561828,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 930327.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 7.899447,
+      "p95_ms": 21.067135,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 7.844939,
+          "p95_ms": 21.067135,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 7.902561,
+          "p95_ms": 20.858911,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 7.899447,
+          "p95_ms": 21.286637,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 26300.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 137.553824,
+      "p95_ms": 167.55993,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 138.641531,
+          "p95_ms": 167.55993,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 137.027235,
+          "p95_ms": 166.576171,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 137.583576,
+          "p95_ms": 167.837466,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 300,
+          "median": 804984.5
+        },
+        "scanned_edges": {
+          "completed_runs": 300,
+          "median": 2236142.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 3,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 100,
+      "measurements": 300,
+      "median_ms": 12.32576,
+      "p95_ms": 1245.275362,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 515,
+      "candidate_count_median": 535.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        },
+        {
+          "min": 515,
+          "median": 535.0,
+          "max": 618
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 100,
+          "median_ms": 12.281084,
+          "p95_ms": 1245.275362,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 100,
+          "median_ms": 12.333917,
+          "p95_ms": 1243.995004,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 100,
+          "median_ms": 12.32576,
+          "p95_ms": 1249.039758,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 300,
+          "median": 1722.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 300,
+          "median": 173098.5
+        },
+        "refinements": {
+          "completed_runs": 300,
+          "median": 3.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 150,
+      "timeout_rate_runs": 1.0,
+      "queries_with_any_timeout": 50,
+      "queries_with_censored_median": 50,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9308.0,
+          "max": 12246
+        },
+        {
+          "min": 9308,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 50,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 50,
+          "timeout_rate": 1.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 50,
+          "timeout_rate": 1.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 0,
+          "median": null
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 1978.719986,
+      "p95_ms": 14557.544468,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9308.0,
+          "max": 12246
+        },
+        {
+          "min": 9308,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 1976.440301,
+          "p95_ms": 14215.006904,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 1978.719986,
+          "p95_ms": 14557.544468,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 1985.490085,
+          "p95_ms": 14599.638143,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 10054774.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 234.193059,
+      "p95_ms": 270.062826,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9308.0,
+          "max": 12246
+        },
+        {
+          "min": 9308,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 235.529478,
+          "p95_ms": 272.733449,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 233.459325,
+          "p95_ms": 270.062826,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 233.999477,
+          "p95_ms": 270.025369,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 1336102.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 3714335.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "H",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": null,
+      "p95_ms": null,
+      "timeout_runs": 81,
+      "timeout_rate_runs": 0.54,
+      "queries_with_any_timeout": 27,
+      "queries_with_censored_median": 27,
+      "candidate_count_min": 5575,
+      "candidate_count_median": 9361.0,
+      "candidate_count_max": 12246,
+      "per_layer_counts": [
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9308.0,
+          "max": 12246
+        },
+        {
+          "min": 9308,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9560.0,
+          "max": 12246
+        },
+        {
+          "min": 5575,
+          "median": 9334.5,
+          "max": 12246
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 27,
+          "timeout_rate": 0.54
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 27,
+          "timeout_rate": 0.54
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": null,
+          "p95_ms": null,
+          "timeouts": 27,
+          "timeout_rate": 0.54
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 69,
+          "median": 46106
+        },
+        "pair_evaluations": {
+          "completed_runs": 69,
+          "median": 15747310
+        },
+        "refinements": {
+          "completed_runs": 69,
+          "median": 5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.445679,
+      "p95_ms": 0.455121,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.443418,
+          "p95_ms": 0.449748,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.449469,
+          "p95_ms": 0.46564,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.447581,
+          "p95_ms": 0.460861,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 232.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.363648,
+      "p95_ms": 0.380248,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.358976,
+          "p95_ms": 0.376167,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.363907,
+          "p95_ms": 0.381688,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.373949,
+          "p95_ms": 0.385279,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 143.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 177.394957,
+      "p95_ms": 202.759394,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 178.544087,
+          "p95_ms": 203.582692,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 177.341403,
+          "p95_ms": 201.986287,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 177.394957,
+          "p95_ms": 202.759394,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 1113875.0
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 3177041.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "L",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 0.335536,
+      "p95_ms": 0.379267,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 3,
+      "candidate_count_median": 4.0,
+      "candidate_count_max": 4,
+      "per_layer_counts": [
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        },
+        {
+          "min": 3,
+          "median": 4.0,
+          "max": 4
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 0.335536,
+          "p95_ms": 0.365426,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 0.335077,
+          "p95_ms": 0.379267,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 0.338788,
+          "p95_ms": 0.39004,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 71.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 120.5
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 2.0
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "DROMC",
+      "display_name": "DROMC (existing Candidate-A* implementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 482.70456,
+      "p95_ms": 492.666324,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 493,
+      "candidate_count_median": 525.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 493,
+          "median": 525.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 576.5,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 515.0,
+          "max": 535
+        },
+        {
+          "min": 493,
+          "median": 520.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 530.0,
+          "max": 535
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 480.92093,
+          "p95_ms": 493.629725,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 482.974973,
+          "p95_ms": 492.666324,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 483.852454,
+          "p95_ms": 492.572316,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 2854549.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "FSSP",
+      "display_name": "FSSP (certified geometric bound)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 15.745403,
+      "p95_ms": 42.386752,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 493,
+      "candidate_count_median": 525.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 493,
+          "median": 525.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 576.5,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 515.0,
+          "max": 535
+        },
+        {
+          "min": 493,
+          "median": 520.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 530.0,
+          "max": 535
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 15.832275,
+          "p95_ms": 41.826707,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 15.726033,
+          "p95_ms": 42.437962,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 15.745403,
+          "p95_ms": 42.386752,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 64771.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "LayeredDijkstra",
+      "display_name": "Layered multi-source Dijkstra",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 214.480546,
+      "p95_ms": 247.878592,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 493,
+      "candidate_count_median": 525.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 493,
+          "median": 525.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 576.5,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 515.0,
+          "max": 535
+        },
+        {
+          "min": 493,
+          "median": 520.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 530.0,
+          "max": 535
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 216.001159,
+          "p95_ms": 248.909126,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 213.35314,
+          "p95_ms": 246.271203,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 214.448158,
+          "p95_ms": 247.878592,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "settled_vertices": {
+          "completed_runs": 150,
+          "median": 1326905.5
+        },
+        "scanned_edges": {
+          "completed_runs": 150,
+          "median": 3687692.5
+        }
+      }
+    },
+    {
+      "dataset": "NYC",
+      "length": 5,
+      "frequency": "M",
+      "algorithm": "ROSE",
+      "display_name": "ROSE (RNII-guided reimplementation)",
+      "n_unique_queries": 50,
+      "measurements": 150,
+      "median_ms": 28.520896,
+      "p95_ms": 1317.075127,
+      "timeout_runs": 0,
+      "timeout_rate_runs": 0.0,
+      "queries_with_any_timeout": 0,
+      "queries_with_censored_median": 0,
+      "candidate_count_min": 493,
+      "candidate_count_median": 525.0,
+      "candidate_count_max": 618,
+      "per_layer_counts": [
+        {
+          "min": 493,
+          "median": 525.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 576.5,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 515.0,
+          "max": 535
+        },
+        {
+          "min": 493,
+          "median": 520.0,
+          "max": 618
+        },
+        {
+          "min": 493,
+          "median": 530.0,
+          "max": 535
+        }
+      ],
+      "repeat_statistics": [
+        {
+          "repeat": 1,
+          "n": 50,
+          "median_ms": 28.476535,
+          "p95_ms": 1310.182239,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 2,
+          "n": 50,
+          "median_ms": 28.520896,
+          "p95_ms": 1320.354459,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        },
+        {
+          "repeat": 3,
+          "n": 50,
+          "median_ms": 28.524884,
+          "p95_ms": 1317.075127,
+          "timeouts": 0,
+          "timeout_rate": 0.0
+        }
+      ],
+      "counter_scope": "completed runs only; counts for timed-out runs are unknown",
+      "counters": {
+        "h2h_calls": {
+          "completed_runs": 150,
+          "median": 2741.0
+        },
+        "pair_evaluations": {
+          "completed_runs": 150,
+          "median": 523103.0
+        },
+        "refinements": {
+          "completed_runs": 150,
+          "median": 3.0
+        }
+      }
+    }
+  ]
+}

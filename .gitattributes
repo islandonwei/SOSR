@@ -1,0 +1,16 @@
+*.py text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+data/semantic/train.json -text
+data/semantic/val.json -text
+data/semantic/test.json -text
+data/semantic/categories.csv -text
+*.npz binary
+*.png binary
+*.pdf binary
+*.eps binary

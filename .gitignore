@@ -218,3 +218,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SOSR experiment artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.env
+.env.*
+!.env.example
+.DS_Store
+.ipynb_checkpoints/
+runs/
+build/
+routing/build/
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.u32
+*.i32
+*.log
+*.tar.gz
+*.zip
+models/*
+!models/README.md
+!models/checkpoints.json
+data/roads/*
+!data/roads/README.md
+!data/roads/manifest.json
+data/cityinstruction/
+baselines/qwen_city/PLAN.json
+baselines/qwen_city/prepared*/
+baselines/qwen_city/train_run/
+baselines/qwen_city/preflight_run/

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-13",
+  "semantic_saved_models": 10,
+  "routing_unique_queries": 1800,
+  "routing_measurements_recomputed": 21600,
+  "hsm_entrypoints": {
+    "passed": true,
+    "scope": "Synthetic tiny encoder, 12 categories, one epoch per applicable phase; not paper retraining.",
+    "torch": "2.13.0+cu132",
+    "variants": [
+      {
+        "variant": "hsm",
+        "passed": true,
+        "seconds": 20.136491277255118
+      },
+      {
+        "variant": "no-level",
+        "passed": true,
+        "seconds": 19.78388515394181
+      },
+      {
+        "variant": "random-neg",
+        "passed": true,
+        "seconds": 20.030881186947227
+      },
+      {
+        "variant": "no-contrastive",
+        "passed": true,
+        "seconds": 20.032279076054692
+      }
+    ]
+  },
+  "routing_checks": [
+    {
+      "passed": true,
+      "graph_cases": 420,
+      "algorithm_comparisons": 1680,
+      "rose_multi_iteration_cases": 58,
+      "semantics": "same-visit and endpoints allowed"
+    },
+    {
+      "id": "timeout_fixture",
+      "algorithm": "timeout_fixture",
+      "status": "timeout",
+      "planner_ms": null,
+      "censor_ms": 20
+    },
+    {
+      "passed": true,
+      "edge_norm_interval_checks": 20000,
+      "rectangle_interval_checks": 20000,
+      "invalid_inputs_rejected": 8,
+      "zero_and_coincident_edges_checked": true
+    }
+  ],
+  "llm_cache_check": {
+    "passed": true,
+    "maximum_error": 0.0,
+    "scope": "CPU tiny-Qwen, Transformers 4.57.1"
+  },
+  "python_syntax": "passed",
+  "frozen_semantic_hashes": "passed",
+  "road_input_hashes": "20 files matched",
+  "documentation_links": "passed",
+  "private_path_and_credential_pattern_scan": "passed",
+  "full_model_training_repeated": false,
+  "full_road_benchmark_repeated": false,
+  "github_actions_hosted_run": "awaiting repository upload"
+}

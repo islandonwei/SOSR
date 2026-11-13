@@ -1,0 +1,557 @@
+[
+  {
+    "file": "data/semantic/train.json",
+    "source_filename": "train.json",
+    "source_sha256": "6c91f386110d2b9e6e31cf89da96be960c7658f8380099b9b2198e78c9974995"
+  },
+  {
+    "file": "data/semantic/val.json",
+    "source_filename": "val.json",
+    "source_sha256": "d227f48d0d8fbd4c543a65a6380099ef8cf18ba52f89430399ff8f38db9ced54"
+  },
+  {
+    "file": "data/semantic/test.json",
+    "source_filename": "test.json",
+    "source_sha256": "8cd547612d983901038002d86aeb6b4e092cf2aac879262397126da3dac0ec26"
+  },
+  {
+    "file": "data/semantic/categories.csv",
+    "source_filename": "categories.csv",
+    "source_sha256": "bf49c02ac618b32849faf9cb9dd1c6c71d5400acf88196198e278aa6e904b24a"
+  },
+  {
+    "file": "hsm/legacy/train.py",
+    "source_filename": "train.py",
+    "source_sha256": "8f478fb4b6698f97547ab9b1b293b61d2438c0b021604ed3165f070b876ac7b0"
+  },
+  {
+    "file": "hsm/legacy/train_sosr0904.py",
+    "source_filename": "train_sosr0904.py",
+    "source_sha256": "6fe4a21f2d0c39c2d4d0934e1c10c5e31b90d1b2cc0af3a992e22120b9a4ce57"
+  },
+  {
+    "file": "hsm/legacy/train_ablation.py",
+    "source_filename": "train_ablation.py",
+    "source_sha256": "6ba55a7b622a4c0f104e700839e4eda8fa4f5f58103c7fc1747bb0e74d6d4528"
+  },
+  {
+    "file": "hsm/legacy/negative_sampling_train_wrapper.py",
+    "source_filename": "negative_sampling_train_wrapper.py",
+    "source_sha256": "3dc589a70619113bb52c203ba32c2f3cd4eaa824a0793beb2906db7d3ed174b7"
+  },
+  {
+    "file": "hsm/legacy/ablation_losses.py",
+    "source_filename": "ablation_losses.py",
+    "source_sha256": "b29ae994138ef388e7391b23c6a8df00772bdd54e0f4039054aab8edacec44c8"
+  },
+  {
+    "file": "results/hsm/publication_metrics.csv",
+    "source_filename": "publication_metrics.csv",
+    "source_sha256": "f3d706b97dd044b6ea7215b063efe52f9d4c1203300934750122cf8fbf9bd5dc"
+  },
+  {
+    "file": "results/efficiency/measurements.csv",
+    "source_filename": "table3_existing_records.csv",
+    "source_sha256": "571cb597922e5668a875c3cbac7acb96bd17ddbe56bf3a6adff6fe6f9bc080c3"
+  },
+  {
+    "file": "baselines/prompts/taxonomy.json",
+    "source_filename": "taxonomy.json",
+    "source_sha256": "2d62eff99c734c1a18ff8ea31136b1112964a7f5805726d2169eb7ef955f54b9"
+  },
+  {
+    "file": "baselines/prompts/few_shot_examples.json",
+    "source_filename": "few_shot_examples.json",
+    "source_sha256": "ed1c162308275664f18c1fae9ee2c2575538489e5503d38e9f3ccd69e12d90d0"
+  },
+  {
+    "file": "baselines/cache_score.py",
+    "source_filename": "cache_score.py",
+    "source_sha256": "409ba767701143f61dc829bc050dbbf993deae2455703736a2047dae4f5a3bbd"
+  },
+  {
+    "file": "baselines/qwen_city/audit_inputs.py",
+    "source_filename": "audit_inputs.py",
+    "source_sha256": "81437dfa24871869f298ed9450fe743abee1b4c9a0ff62d554f8bdefe12e7ab8"
+  },
+  {
+    "file": "routing/source/EmbeddingService.cpp",
+    "source_filename": "EmbeddingService.cpp",
+    "source_sha256": "36d22a3c422649207a5b407d1bc6e56c5aaaf1a1896d1ddb11fcd2d154ed541f"
+  },
+  {
+    "file": "routing/source/EmbeddingService.h",
+    "source_filename": "EmbeddingService.h",
+    "source_sha256": "c0146507eee7b4ea98368225a0b62f9a0b626298c378b9dc73c69d4039dc27d7"
+  },
+  {
+    "file": "routing/source/FSSP.cpp",
+    "source_filename": "FSSP.cpp",
+    "source_sha256": "a958375b9d242d12dcff8af175daf1bcf505920cb047e8f75ad3e07ffe62aa45"
+  },
+  {
+    "file": "routing/source/h2h.cpp",
+    "source_filename": "h2h.cpp",
+    "source_sha256": "4c459b563387157cedc6efc89ff7621fe70fde589dd718acb42bd0f0690d46e7"
+  },
+  {
+    "file": "routing/source/h2h.h",
+    "source_filename": "h2h.h",
+    "source_sha256": "7d651912df7dbff56da8d750854adf53ac67735f68f36efc58fbaf8160493719"
+  },
+  {
+    "file": "routing/source/safe_geometry.h",
+    "source_filename": "safe_geometry.h",
+    "source_sha256": "ca01298a8cbb0d6b3d333519866a2890cbcabe18418027bf70290f9c4f91fff9"
+  },
+  {
+    "file": "routing/source/spf.cpp",
+    "source_filename": "spf.cpp",
+    "source_sha256": "22b2e779197a96d94f982fb7832eacbd11bc4253240184b55c9f5caa2d0d3982"
+  },
+  {
+    "file": "routing/source/spf.h",
+    "source_filename": "spf.h",
+    "source_sha256": "16a4584a89a0c852984bb743b23ac9e8e77d402b07b4ad51db7e1e86f77ad09f"
+  },
+  {
+    "file": "routing/driver.cpp",
+    "source_filename": "driver.cpp",
+    "source_sha256": "9641acf4824a21639035c8667932634a25aacd7a1c745605057df67c43a2507c"
+  },
+  {
+    "file": "routing/baseline_core.h",
+    "source_filename": "baseline_core.h",
+    "source_sha256": "62b0b855bd81c95917318f09992af9687ac07f2db7e6ccceb58351c34e445fb5"
+  },
+  {
+    "file": "routing/report_stats.py",
+    "source_filename": "report_stats.py",
+    "source_sha256": "a6c87a2135dbde4e3a7b3a67b393c45eb5e45a5cf8f3a47081df482b7693d478"
+  },
+  {
+    "file": "routing/source_original/DROMC.cpp",
+    "source_filename": "DROMC.cpp",
+    "source_sha256": "c53403ac0b88c80fc780d991b23d7e4fe3c548f9a05b2de9eeb7ed29be802c1a"
+  },
+  {
+    "file": "routing/inputs/BAY/candidate_memberships.txt",
+    "source_filename": "candidate_memberships.txt",
+    "source_sha256": "7212e820968055bc702b7366fbba89c04b75a8f82634b63decaf0d01467f8413"
+  },
+  {
+    "file": "routing/inputs/BAY/CATEGORY_SELECTION.json",
+    "source_filename": "CATEGORY_SELECTION.json",
+    "source_sha256": "11e9b9f837a69e358db887bc8b0d66f28186dabfd6e6917c00bac5769484097c"
+  },
+  {
+    "file": "routing/inputs/BAY/queries.txt",
+    "source_filename": "queries.txt",
+    "source_sha256": "2e92799c8b3c4cb35aa44d4080099d2a72e856de16ba5b78c8706f08cfe2792f"
+  },
+  {
+    "file": "routing/inputs/COL/candidate_memberships.txt",
+    "source_filename": "candidate_memberships.txt",
+    "source_sha256": "304c29ae04cc0f7e7d7e4bd22fdd52dd9dda7e365133532915921c77483032f6"
+  },
+  {
+    "file": "routing/inputs/COL/CATEGORY_SELECTION.json",
+    "source_filename": "CATEGORY_SELECTION.json",
+    "source_sha256": "b8faeb09839cd5c912e81f7d77e6fb5562c38c5d96d2d198fe009daac0182613"
+  },
+  {
+    "file": "routing/inputs/COL/queries.txt",
+    "source_filename": "queries.txt",
+    "source_sha256": "a468fb4d3f6ec36775f4244c292a81be95e75a2da1ff8411915563e8a6f69bb5"
+  },
+  {
+    "file": "routing/inputs/FLA/candidate_memberships.txt",
+    "source_filename": "candidate_memberships.txt",
+    "source_sha256": "acb91d6c1b6f06dc913944335174acaad0b0a49c985e33f0a87901148a2cbe1a"
+  },
+  {
+    "file": "routing/inputs/FLA/CATEGORY_SELECTION.json",
+    "source_filename": "CATEGORY_SELECTION.json",
+    "source_sha256": "dae10752bfd9205a7a76009bbaaad5f236425790dc5d4ac1676297d6a3a307fb"
+  },
+  {
+    "file": "routing/inputs/FLA/queries.txt",
+    "source_filename": "queries.txt",
+    "source_sha256": "435d6660725b285d06b687e44b9eb3c2c8af7ddbf10483d164b9e0cb8e502b83"
+  },
+  {
+    "file": "routing/inputs/NYC/candidate_memberships.txt",
+    "source_filename": "candidate_memberships.txt",
+    "source_sha256": "c220f8f45f3eb28539477f472ad67893628c718dbd9f82b7f986341c912c5be1"
+  },
+  {
+    "file": "routing/inputs/NYC/CATEGORY_SELECTION.json",
+    "source_filename": "CATEGORY_SELECTION.json",
+    "source_sha256": "9bd682b11f0f96683e93a1395b77a0aa84d8ac3f18e3bff14fb73f99c8ad2475"
+  },
+  {
+    "file": "routing/inputs/NYC/queries.txt",
+    "source_filename": "queries.txt",
+    "source_sha256": "d81d317d07085f0fd0accf8560282a7815e4b3e80b8005e34e7a87394a0408b7"
+  },
+  {
+    "file": "routing/QUERIES.json",
+    "source_filename": "QUERIES.json",
+    "source_sha256": "eaa7689bb1255aad14009709ae3b1c871d1e8828bbfbff01253229fac719ca96"
+  },
+  {
+    "file": "routing/references/BAY.jsonl",
+    "source_filename": "BAY.jsonl",
+    "source_sha256": "0f5f03ef427bff84e6045779acce6ec42ba6a72452bd5de5f5117239dc107472"
+  },
+  {
+    "file": "routing/references/COL.jsonl",
+    "source_filename": "COL.jsonl",
+    "source_sha256": "fffef55ca6d5e3372f5f056f40b6b43fe1b8d1292017bc6efc6e36ea7ec744f0"
+  },
+  {
+    "file": "routing/references/FLA.jsonl",
+    "source_filename": "FLA.jsonl",
+    "source_sha256": "b939c70fd52139053704d90860be3480e52c8f96967d748d9fc792559a8fae55"
+  },
+  {
+    "file": "routing/references/NYC.jsonl",
+    "source_filename": "NYC.jsonl",
+    "source_sha256": "7d7264c8b1c11d56329fe6e7046c26761f82d7cd69a7ab38f6d49bde7e04445a"
+  },
+  {
+    "file": "results/routing/raw/r1_BAY.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "0ba914c5814714905852ed17f3f1669d2c37ba643772b5a7c0fcfedfd9ccb882"
+  },
+  {
+    "file": "results/routing/raw/r1_COL.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "351d5459aa42b4690eb99bf5f57b0e82f49dc105600abbd875e543b03e18ae45"
+  },
+  {
+    "file": "results/routing/raw/r1_FLA.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "001ad751883411d3c12ca1f70807559fe1987c6380843c0856bb9088066c2c69"
+  },
+  {
+    "file": "results/routing/raw/r1_NYC.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "e32cbbe2814e793519ee31a9aafb26651d4c9f651444e17324a44471477a2bef"
+  },
+  {
+    "file": "results/routing/raw/r2_BAY.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "c425d2358e46e501251995ff0bdda27ace523449567f66832b9bc34a88ac9d5c"
+  },
+  {
+    "file": "results/routing/raw/r2_COL.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "7b0b7b100e6cecb43a93b3331592112958768b08c227892c64eeab2e5b2efb23"
+  },
+  {
+    "file": "results/routing/raw/r2_FLA.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "6e13438c34017df4463e63c926f823be096483510af48db457467e7a98d155b2"
+  },
+  {
+    "file": "results/routing/raw/r2_NYC.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "d02e0e17d908b19456d0db9e967ba52466c6cf8ca76ebc260dfb588e5685bd5d"
+  },
+  {
+    "file": "results/routing/raw/r3_BAY.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "b69902e07605e3d0760a2e5b69c62888d95395905dfc2793b416d9d6c3a1e307"
+  },
+  {
+    "file": "results/routing/raw/r3_COL.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "48d0fde55b1b2a204a064b5a0a31a63a9dca9e4ce980a10dd00ac91720d2bd52"
+  },
+  {
+    "file": "results/routing/raw/r3_FLA.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "c4ad6407aa87a1ba19488cb639670c80cd8b813858ecf2a862b5decfdb204d48"
+  },
+  {
+    "file": "results/routing/raw/r3_NYC.jsonl",
+    "source_filename": "measurements.jsonl",
+    "source_sha256": "8b5cbd5e80d788fb03abe2fa661e063972fb50c5eaf57acd219c5d041921803f"
+  },
+  {
+    "file": "results/routing/RESULTS.json",
+    "source_filename": "RESULTS.json",
+    "source_sha256": "f7936583b5c938bd39a88537424fde4865cbc3bd57706d84e5eeb289fac51f62"
+  },
+  {
+    "file": "results/routing/RESULTS.csv",
+    "source_filename": "RESULTS.csv",
+    "source_sha256": "8cc76223d228ff3e97483650111cf295ba73967dc32a0d5bf829e0452217db79"
+  },
+  {
+    "file": "results/routing/FORMAL_AUDIT.json",
+    "source_filename": "FORMAL_AUDIT.json",
+    "source_sha256": "15954232113927da223c07db15a0b10b068a649bdc6bf025e02029cd61654107"
+  },
+  {
+    "file": "routing/test_safe_geometry.cpp",
+    "source_filename": "test_safe_geometry.cpp",
+    "source_sha256": "5c0c78d75e807546d1e966fcd3c5d95acaf7cb70e027762f69a3a2be0a1ec1b8"
+  },
+  {
+    "file": "routing/test_small_graphs.cpp",
+    "source_filename": "test_small_graphs.cpp",
+    "source_sha256": "5aeff9a1ca35600293adc5f22b4e70844d6e8e47ba1e355820a1ff5ec99acf0a"
+  },
+  {
+    "file": "figures/archived/0.dat",
+    "source_filename": "0.dat",
+    "source_sha256": "94071ff4b43f2a8f8bbb919daa55b122d238aa0ddcf148a61be6269c8a0b9158"
+  },
+  {
+    "file": "figures/archived/0.eps",
+    "source_filename": "0.eps",
+    "source_sha256": "d9f072f13f31a3b4b0b389c80e43c78b28e5cb73bce511f3104c35ac8daca002"
+  },
+  {
+    "file": "figures/archived/0",
+    "source_filename": "0",
+    "source_sha256": "f1b6f02fd5007d5983514f519fb249bac46a9df0dfe43e8cd57474c547a84e62"
+  },
+  {
+    "file": "figures/archived/1.dat",
+    "source_filename": "1.dat",
+    "source_sha256": "babe2b43b5715f94994a764eacf1bfa67cb3fe516ba428777a042ddccdd3f7cd"
+  },
+  {
+    "file": "figures/archived/1.eps",
+    "source_filename": "1.eps",
+    "source_sha256": "870fa43a94a638155cf403598d6ae4ce673a60fd4d3589d5aa4ff5f8c994a250"
+  },
+  {
+    "file": "figures/archived/1",
+    "source_filename": "1",
+    "source_sha256": "c61ab0eb757ce09df51fa4d3a2d1b114c63f8a2b9fc126aa8e1a23e68fc41b75"
+  },
+  {
+    "file": "figures/archived/2.dat",
+    "source_filename": "2.dat",
+    "source_sha256": "7be682d0d22fb5216d0ffd317320db351904384de19c9bc0ed3a7d81102a7322"
+  },
+  {
+    "file": "figures/archived/2.eps",
+    "source_filename": "2.eps",
+    "source_sha256": "4793484c8580cd953b963a8147fd01b58941bfd70c3a927d6d015504322e86e0"
+  },
+  {
+    "file": "figures/archived/2",
+    "source_filename": "2",
+    "source_sha256": "19c1002dc2bcc68b3f0335fa164bf6055f5bd59bb11e9c2f2c1ba98f8f79824a"
+  },
+  {
+    "file": "figures/archived/3.dat",
+    "source_filename": "3.dat",
+    "source_sha256": "72eaf1f3839433b2d3d84188b6ba32f1d51c418c5d2f4ddf6af0139c775c8574"
+  },
+  {
+    "file": "figures/archived/3.eps",
+    "source_filename": "3.eps",
+    "source_sha256": "b3bb9e739364641f48ca6d06eae30daabb7c3c66aacd96aaa6a868d2548e5f83"
+  },
+  {
+    "file": "figures/archived/3",
+    "source_filename": "3",
+    "source_sha256": "e327a8b84bd9093a7640e2ae3ea7bf98219a6781cb1b4c6267d0f1e8269ea2e4"
+  },
+  {
+    "file": "figures/archived/4.dat",
+    "source_filename": "4.dat",
+    "source_sha256": "7a1ef4da58467f8ece202466d1c01374019659465c30dbdc3f2a2aae802b8116"
+  },
+  {
+    "file": "figures/archived/4.eps",
+    "source_filename": "4.eps",
+    "source_sha256": "344a51dc7c752f1f81089adc68f8eeebb316e789939f5e71b3cb21fd330c6b61"
+  },
+  {
+    "file": "figures/archived/4",
+    "source_filename": "4",
+    "source_sha256": "23f3fe3a44ecaf435a7cbf9bbaaf1240a94ddb93675395de7380762977f1610c"
+  },
+  {
+    "file": "figures/archived/5.dat",
+    "source_filename": "5.dat",
+    "source_sha256": "60d6aed71d51fd7bb93e4550b11a63a0d08904809a95076ae22124420b2160f1"
+  },
+  {
+    "file": "figures/archived/5.eps",
+    "source_filename": "5.eps",
+    "source_sha256": "3e955c85e4d5a7f332b4381719103556489f4542bfdac6dd4dff336abf46f8a4"
+  },
+  {
+    "file": "figures/archived/5",
+    "source_filename": "5",
+    "source_sha256": "4a67799f47e677dc0e94fc6e5d6e65a024e3742abd52737f473fdd127a892945"
+  },
+  {
+    "file": "figures/archived/6.dat",
+    "source_filename": "6.dat",
+    "source_sha256": "ae9cacf34d48858a5f908a7408f503d994b51de866562328f72dc5118643b8d3"
+  },
+  {
+    "file": "figures/archived/6.eps",
+    "source_filename": "6.eps",
+    "source_sha256": "4cb83e147415337822497dc6c700ea94bdd084b2aadbbe31e6a8f158a4e498f3"
+  },
+  {
+    "file": "figures/archived/6",
+    "source_filename": "6",
+    "source_sha256": "044ae8c5cdbc40fe9dc02dbc793a6432b9458c28e1aca2e924a0ec7c55366300"
+  },
+  {
+    "file": "figures/archived/7.dat",
+    "source_filename": "7.dat",
+    "source_sha256": "f44066505d65470a70794fe2871699c0b32b3d1dfb34bee948663d0327be939f"
+  },
+  {
+    "file": "figures/archived/7.eps",
+    "source_filename": "7.eps",
+    "source_sha256": "6da410e427f0d58c0cb401663a679f9aa5fcfcc0a193a98cf0b62b71a7079741"
+  },
+  {
+    "file": "figures/archived/7",
+    "source_filename": "7",
+    "source_sha256": "0312fd0e43e368ed33b593800689fd16cd81ad5779d98e14e8523f973c873747"
+  },
+  {
+    "file": "figures/archived/8.dat",
+    "source_filename": "8.dat",
+    "source_sha256": "c221b2bcef891b743fc82c1e450bda2a4418a262d346d5107b887861a214e6a9"
+  },
+  {
+    "file": "figures/archived/8.eps",
+    "source_filename": "8.eps",
+    "source_sha256": "e10fa64bcebfa315a7dec45a28daaee160db41b702c8d04da16e27d8e42ef2ab"
+  },
+  {
+    "file": "figures/archived/8",
+    "source_filename": "8",
+    "source_sha256": "5aca6637730a373ef1ac387ab33920e1ceedbfcc2a9ba5836d712b7e10d7c597"
+  },
+  {
+    "file": "figures/archived/9.dat",
+    "source_filename": "9.dat",
+    "source_sha256": "fd6dda0f47ee956ceaa7e6300f9cec20da59e38b8923e21b4fb0dba08e3cd1b2"
+  },
+  {
+    "file": "figures/archived/9.eps",
+    "source_filename": "9.eps",
+    "source_sha256": "8e7e02a62c6ea1b48e874f8c8f7560e09a676c2b9c3fde0af189fd7a96066581"
+  },
+  {
+    "file": "figures/archived/9",
+    "source_filename": "9",
+    "source_sha256": "220201fe653d12bcf7ce730921a25fe18687dede7d7de8490307973eae40a46a"
+  },
+  {
+    "file": "figures/archived/10.dat",
+    "source_filename": "10.dat",
+    "source_sha256": "b04596ddadc867c56fe88701fc51d8fb9fd7d25a8188f615ffba83823b083637"
+  },
+  {
+    "file": "figures/archived/10.eps",
+    "source_filename": "10.eps",
+    "source_sha256": "2281329c0423c41c766ff2d82f4b3b65b64dc25b6f5c7d2b444fddad5d499cdb"
+  },
+  {
+    "file": "figures/archived/10",
+    "source_filename": "10",
+    "source_sha256": "1a4e101013c15e44adc6beb14d85b0cbea423ec3f948d0e1cd124b9ab9f0f27e"
+  },
+  {
+    "file": "figures/archived/11.dat",
+    "source_filename": "11.dat",
+    "source_sha256": "76dccc69fb80be93000973d2eb9b702f1b2efd1401417db0073bccee5a295140"
+  },
+  {
+    "file": "figures/archived/11.eps",
+    "source_filename": "11.eps",
+    "source_sha256": "62c9e6a7d04ef2a622262b60a0a244043088f5a914ec871f0484b792657f006a"
+  },
+  {
+    "file": "figures/archived/11",
+    "source_filename": "11",
+    "source_sha256": "c829a7df855c279da3845bc2d06a46870555cc703dd77f6a289ee9e51f143dff"
+  },
+  {
+    "file": "figures/archived/16.dat",
+    "source_filename": "16.dat",
+    "source_sha256": "0dc4b7107103ed1a73b08a0e9e970fd010990665902c4f0884ebd9830d89fb51"
+  },
+  {
+    "file": "figures/archived/16.eps",
+    "source_filename": "16.eps",
+    "source_sha256": "eb4a84cab4f7fa4a9329b86d96616603e766aefda9a45f09be5e232c37cd1d66"
+  },
+  {
+    "file": "figures/archived/16",
+    "source_filename": "16",
+    "source_sha256": "00f0ac29e1aff831fca27a6f19dce0211e5be6abbbe33a02bffb142aa417521f"
+  },
+  {
+    "file": "figures/archived/17.dat",
+    "source_filename": "17.dat",
+    "source_sha256": "47793a59186f0d655099bbb4ae338cc74bf20bdd0725f6e7dac7946cbd328f3e"
+  },
+  {
+    "file": "figures/archived/17.eps",
+    "source_filename": "17.eps",
+    "source_sha256": "4cb620ca79803d74ec2a91da19079479b0c2d50c388cb325ee5685d61709dc9f"
+  },
+  {
+    "file": "figures/archived/17",
+    "source_filename": "17",
+    "source_sha256": "a2e9479bcc962dd49da1a4104dc0cbe6e734fcaabf043e8c34d1aed01158b03f"
+  },
+  {
+    "file": "figures/archived/18.dat",
+    "source_filename": "18.dat",
+    "source_sha256": "7b6b45c11e11b0908957ba3e3d38b508cbf9e480f87890361ed2bd61a9642dbd"
+  },
+  {
+    "file": "figures/archived/18.eps",
+    "source_filename": "18.eps",
+    "source_sha256": "e858ee711ea4c10dc70e6e2d506af491a93e31dff06500fb1ca954be36827872"
+  },
+  {
+    "file": "figures/archived/18",
+    "source_filename": "18",
+    "source_sha256": "f78e8e749be728defd3745c5c530c4e584680c0ae769624aa7819c4bcfc78c3e"
+  },
+  {
+    "file": "figures/archived/19.dat",
+    "source_filename": "19.dat",
+    "source_sha256": "11181bc99354138e1f2ce392f664e379fce30770a3c4a2430ffac8ec9e03835c"
+  },
+  {
+    "file": "figures/archived/19.eps",
+    "source_filename": "19.eps",
+    "source_sha256": "863775f8a95e896333e15c2ce088753db86a159aedee46d855f620f7cff212b7"
+  },
+  {
+    "file": "figures/archived/19",
+    "source_filename": "19",
+    "source_sha256": "f66dccb5da4d23d15e303d4eceaed46f0d9758aa212250197360d4f534c09e66"
+  },
+  {
+    "file": "baselines/qwen_city/prepare_data.py",
+    "source_filename": "prepare_data.py",
+    "source_sha256": "c842eaedf5f187de46f8c589631fe1987d2cff5d2d083bb11b931ddf2efd4263"
+  },
+  {
+    "file": "baselines/qwen_city/train_fsdp.py",
+    "source_filename": "train_fsdp.py",
+    "source_sha256": "ee1ef5839891cd49743caf231841134f235922052a1d1b97640d12303fb18c09"
+  }
+]

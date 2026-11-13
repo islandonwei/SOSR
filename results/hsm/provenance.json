@@ -1,0 +1,50 @@
+{
+  "qwen-zero": {
+    "source_sha256": "046044279c994cb67dfb1f189bb77b1c495ce944d2e6b87868348dc7480d097a",
+    "source_kind": "llm_jsonl",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "e2ef976719bf4278042ef749c9fe3a83386914fc458d0a94b7f8b8d822d4104b"
+  },
+  "qwen-few": {
+    "source_sha256": "841c2ad17e2f8ac4440ab50d4a9995ba51d8ff7134741bca18858155afa95325",
+    "source_kind": "llm_jsonl",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "1156c4c54f187528aafca29fa4eab15096b783da1abf830ef81ebef8e3a7e9e9"
+  },
+  "qwen-city-zero": {
+    "source_sha256": "4e467a8e70afcee2a176b0071a75892fcb70ef9186ce9ba7602f558b0133ecc9",
+    "source_kind": "llm_jsonl",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "bae2d5f4a3e52bd8a2b3dccf4878834493b16d49fafb8d9523a90905d44517dd"
+  },
+  "qwen-city-few": {
+    "source_sha256": "79a0f568146601e4d1d997d02a8b04a40313f1c2f6074b2237ec6605279a4b67",
+    "source_kind": "llm_jsonl",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "05ffd56e81713e9eadb8dec7366418d6e7ffc739c6bada058d46d40aabfdc2b5"
+  },
+  "hsm": {
+    "source_sha256": "3b0e73c6a5ebcf3a4ab44fe4b9d74ab821eca42a6e5d6044d2c6e18d72c6c05c",
+    "source_kind": "npz",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "3b44c740321fdf319c2e29adb0ca884adae16bce6a05f1692502743bcef797aa"
+  },
+  "no-contrastive": {
+    "source_sha256": "f74be8e03ba25e18a0e4da268d3a31206385748787feee285e4ccfa791b475d8",
+    "source_kind": "npz",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "ac00f4221b18de5dc92bc659d789b3d478490f23057e42ca77cb3c641d8564fa"
+  },
+  "no-level": {
+    "source_sha256": "a3dfe52605a8e47bf332c0b65909bca461e407707861d526b07dab822e659b4f",
+    "source_kind": "npz",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "4fd7e20a486964045b507b26baba22e096035896781a7497294dbf53430dfbe9"
+  },
+  "random-neg": {
+    "source_sha256": "15a24c06385d0f55e83b1fdd147cb0236f1f5c6aba240b3c48a5e7f48eaa8007",
+    "source_kind": "npz",
+    "conversion": "saved ranking order remapped to categories.csv order; no rescoring or reranking",
+    "packaged_sha256": "d097b4ae1013c965b0c9ddb433ae94a1dca1980bbbc717ced2c23b8d4de6c604"
+  }
+}

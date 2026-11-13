@@ -1,0 +1,97 @@
+dataset,length,frequency,algorithm,display_name,n_unique_queries,median_ms,p95_ms,timeout_runs,timeout_rate_runs,candidate_count_min,candidate_count_median,candidate_count_max
+BAY,3,H,DROMC,DROMC (existing Candidate-A* implementation),100,16055.992086,16279.387758,0,0.0,3832,5868.0,9451
+BAY,3,H,FSSP,FSSP (certified geometric bound),100,138.664068,892.342746,0,0.0,3832,5868.0,9451
+BAY,3,H,LayeredDijkstra,Layered multi-source Dijkstra,100,166.561291,198.431692,0,0.0,3832,5868.0,9451
+BAY,3,H,ROSE,ROSE (RNII-guided reimplementation),100,>30000,>30000,153,0.51,3832,5868.0,9451
+BAY,3,L,DROMC,DROMC (existing Candidate-A* implementation),100,0.451368,0.465888,0,0.0,5,6.0,11
+BAY,3,L,FSSP,FSSP (certified geometric bound),100,0.378827,0.406374,0,0.0,5,6.0,11
+BAY,3,L,LayeredDijkstra,Layered multi-source Dijkstra,100,147.177933,173.800572,0,0.0,5,6.0,11
+BAY,3,L,ROSE,ROSE (RNII-guided reimplementation),100,0.342513,0.417808,0,0.0,5,6.0,11
+BAY,3,M,DROMC,DROMC (existing Candidate-A* implementation),100,76.697164,81.232013,0,0.0,231,539.0,565
+BAY,3,M,FSSP,FSSP (certified geometric bound),100,6.439505,10.354601,0,0.0,231,539.0,565
+BAY,3,M,LayeredDijkstra,Layered multi-source Dijkstra,100,154.719494,182.687574,0,0.0,231,539.0,565
+BAY,3,M,ROSE,ROSE (RNII-guided reimplementation),100,10.809331,547.284775,0,0.0,231,539.0,565
+COL,3,H,DROMC,DROMC (existing Candidate-A* implementation),100,9287.916567,9423.870582,0,0.0,1546,3965.0,6616
+COL,3,H,FSSP,FSSP (certified geometric bound),100,318.113733,2042.414700,0,0.0,1546,3965.0,6616
+COL,3,H,LayeredDijkstra,Layered multi-source Dijkstra,100,229.628306,274.293004,0,0.0,1546,3965.0,6616
+COL,3,H,ROSE,ROSE (RNII-guided reimplementation),100,15468.448493,>30000,132,0.44,1546,3965.0,6616
+COL,3,L,DROMC,DROMC (existing Candidate-A* implementation),100,0.500260,0.529500,0,0.0,8,10.0,10
+COL,3,L,FSSP,FSSP (certified geometric bound),100,0.437668,0.477800,0,0.0,8,10.0,10
+COL,3,L,LayeredDijkstra,Layered multi-source Dijkstra,100,168.351281,229.348057,0,0.0,8,10.0,10
+COL,3,L,ROSE,ROSE (RNII-guided reimplementation),100,0.406730,0.509709,0,0.0,8,10.0,10
+COL,3,M,DROMC,DROMC (existing Candidate-A* implementation),100,27.334326,29.117946,0,0.0,138,167.0,339
+COL,3,M,FSSP,FSSP (certified geometric bound),100,7.579974,9.520659,0,0.0,138,167.0,339
+COL,3,M,LayeredDijkstra,Layered multi-source Dijkstra,100,214.292689,258.967147,0,0.0,138,167.0,339
+COL,3,M,ROSE,ROSE (RNII-guided reimplementation),100,6.544192,79.779366,0,0.0,138,167.0,339
+FLA,1,H,DROMC,DROMC (existing Candidate-A* implementation),50,68.383829,85.701673,0,0.0,6029,19120.0,23886
+FLA,1,H,FSSP,FSSP (certified geometric bound),50,7.293965,37.900567,0,0.0,6029,19120.0,23886
+FLA,1,H,LayeredDijkstra,Layered multi-source Dijkstra,50,208.302989,352.324471,0,0.0,6029,19120.0,23886
+FLA,1,H,ROSE,ROSE (RNII-guided reimplementation),50,26.166836,258.985932,0,0.0,6029,19120.0,23886
+FLA,1,L,DROMC,DROMC (existing Candidate-A* implementation),50,0.271705,0.356557,0,0.0,9,14.0,21
+FLA,1,L,FSSP,FSSP (certified geometric bound),50,0.267766,0.347837,0,0.0,9,14.0,21
+FLA,1,L,LayeredDijkstra,Layered multi-source Dijkstra,50,203.924269,321.956392,0,0.0,9,14.0,21
+FLA,1,L,ROSE,ROSE (RNII-guided reimplementation),50,0.364387,0.458969,0,0.0,9,14.0,21
+FLA,1,M,DROMC,DROMC (existing Candidate-A* implementation),50,5.378916,7.453407,0,0.0,573,1137.0,1641
+FLA,1,M,FSSP,FSSP (certified geometric bound),50,1.543561,4.292559,0,0.0,573,1137.0,1641
+FLA,1,M,LayeredDijkstra,Layered multi-source Dijkstra,50,204.753793,335.309849,0,0.0,573,1137.0,1641
+FLA,1,M,ROSE,ROSE (RNII-guided reimplementation),50,2.743854,4.487498,0,0.0,573,1137.0,1641
+FLA,3,H,DROMC,DROMC (existing Candidate-A* implementation),100,>30000,>30000,300,1.0,6029,19120.0,23886
+FLA,3,H,FSSP,FSSP (certified geometric bound),100,804.943074,7119.784853,0,0.0,6029,19120.0,23886
+FLA,3,H,LayeredDijkstra,Layered multi-source Dijkstra,100,627.799784,781.531679,0,0.0,6029,19120.0,23886
+FLA,3,H,ROSE,ROSE (RNII-guided reimplementation),100,>30000,>30000,180,0.6,6029,19120.0,23886
+FLA,3,L,DROMC,DROMC (existing Candidate-A* implementation),100,0.857168,0.892518,0,0.0,9,14.0,21
+FLA,3,L,FSSP,FSSP (certified geometric bound),100,0.789578,0.865059,0,0.0,9,14.0,21
+FLA,3,L,LayeredDijkstra,Layered multi-source Dijkstra,100,539.962710,673.995226,0,0.0,9,14.0,21
+FLA,3,L,ROSE,ROSE (RNII-guided reimplementation),100,0.569512,0.643724,0,0.0,9,14.0,21
+FLA,3,M,DROMC,DROMC (existing Candidate-A* implementation),100,793.576320,804.321236,0,0.0,573,1137.0,1641
+FLA,3,M,FSSP,FSSP (certified geometric bound),100,12.720803,31.693541,0,0.0,573,1137.0,1641
+FLA,3,M,LayeredDijkstra,Layered multi-source Dijkstra,100,585.381227,724.443769,0,0.0,573,1137.0,1641
+FLA,3,M,ROSE,ROSE (RNII-guided reimplementation),100,74.807084,13749.097527,9,0.03,573,1137.0,1641
+FLA,5,H,DROMC,DROMC (existing Candidate-A* implementation),50,>30000,>30000,150,1.0,6029,20017.0,23886
+FLA,5,H,FSSP,FSSP (certified geometric bound),50,4353.783533,>30000,9,0.06,6029,20017.0,23886
+FLA,5,H,LayeredDijkstra,Layered multi-source Dijkstra,50,1054.726540,1192.176454,0,0.0,6029,20017.0,23886
+FLA,5,H,ROSE,ROSE (RNII-guided reimplementation),50,>30000,>30000,99,0.66,6029,20017.0,23886
+FLA,5,L,DROMC,DROMC (existing Candidate-A* implementation),50,1.521556,1.566882,0,0.0,9,14.0,21
+FLA,5,L,FSSP,FSSP (certified geometric bound),50,1.229191,1.345928,0,0.0,9,14.0,21
+FLA,5,L,LayeredDijkstra,Layered multi-source Dijkstra,50,906.180908,1027.822773,0,0.0,9,14.0,21
+FLA,5,L,ROSE,ROSE (RNII-guided reimplementation),50,0.740993,0.855527,0,0.0,9,14.0,21
+FLA,5,M,DROMC,DROMC (existing Candidate-A* implementation),50,2083.682618,2136.245031,0,0.0,573,882.0,1641
+FLA,5,M,FSSP,FSSP (certified geometric bound),50,30.690448,79.857654,0,0.0,573,882.0,1641
+FLA,5,M,LayeredDijkstra,Layered multi-source Dijkstra,50,966.548852,1089.519471,0,0.0,573,882.0,1641
+FLA,5,M,ROSE,ROSE (RNII-guided reimplementation),50,191.573143,12519.772575,3,0.02,573,882.0,1641
+NYC,1,H,DROMC,DROMC (existing Candidate-A* implementation),50,27.932950,39.040177,0,0.0,5575,9361.0,12246
+NYC,1,H,FSSP,FSSP (certified geometric bound),50,4.919289,18.972999,0,0.0,5575,9361.0,12246
+NYC,1,H,LayeredDijkstra,Layered multi-source Dijkstra,50,53.028349,95.896884,0,0.0,5575,9361.0,12246
+NYC,1,H,ROSE,ROSE (RNII-guided reimplementation),50,11.249112,94.120231,0,0.0,5575,9361.0,12246
+NYC,1,L,DROMC,DROMC (existing Candidate-A* implementation),50,0.149873,0.159984,0,0.0,3,4.0,4
+NYC,1,L,FSSP,FSSP (certified geometric bound),50,0.142663,0.155053,0,0.0,3,4.0,4
+NYC,1,L,LayeredDijkstra,Layered multi-source Dijkstra,50,56.242779,80.318960,0,0.0,3,4.0,4
+NYC,1,L,ROSE,ROSE (RNII-guided reimplementation),50,0.224024,0.264667,0,0.0,3,4.0,4
+NYC,1,M,DROMC,DROMC (existing Candidate-A* implementation),50,2.045030,2.613283,0,0.0,515,535.0,618
+NYC,1,M,FSSP,FSSP (certified geometric bound),50,0.794269,1.841884,0,0.0,515,535.0,618
+NYC,1,M,LayeredDijkstra,Layered multi-source Dijkstra,50,52.450293,92.275288,0,0.0,515,535.0,618
+NYC,1,M,ROSE,ROSE (RNII-guided reimplementation),50,1.197660,1.763523,0,0.0,515,535.0,618
+NYC,3,H,DROMC,DROMC (existing Candidate-A* implementation),100,>30000,>30000,300,1.0,5575,9361.0,12246
+NYC,3,H,FSSP,FSSP (certified geometric bound),100,363.307405,3670.405936,0,0.0,5575,9361.0,12246
+NYC,3,H,LayeredDijkstra,Layered multi-source Dijkstra,100,147.938749,181.055707,0,0.0,5575,9361.0,12246
+NYC,3,H,ROSE,ROSE (RNII-guided reimplementation),100,>30000,>30000,153,0.51,5575,9361.0,12246
+NYC,3,L,DROMC,DROMC (existing Candidate-A* implementation),100,0.299665,0.313875,0,0.0,3,4.0,4
+NYC,3,L,FSSP,FSSP (certified geometric bound),100,0.272776,0.283126,0,0.0,3,4.0,4
+NYC,3,L,LayeredDijkstra,Layered multi-source Dijkstra,100,111.115467,133.883632,0,0.0,3,4.0,4
+NYC,3,L,ROSE,ROSE (RNII-guided reimplementation),100,0.276665,0.338586,0,0.0,3,4.0,4
+NYC,3,M,DROMC,DROMC (existing Candidate-A* implementation),100,165.401032,174.764213,0,0.0,515,535.0,618
+NYC,3,M,FSSP,FSSP (certified geometric bound),100,7.899447,21.067135,0,0.0,515,535.0,618
+NYC,3,M,LayeredDijkstra,Layered multi-source Dijkstra,100,137.553824,167.559930,0,0.0,515,535.0,618
+NYC,3,M,ROSE,ROSE (RNII-guided reimplementation),100,12.325760,1245.275362,0,0.0,515,535.0,618
+NYC,5,H,DROMC,DROMC (existing Candidate-A* implementation),50,>30000,>30000,150,1.0,5575,9361.0,12246
+NYC,5,H,FSSP,FSSP (certified geometric bound),50,1978.719986,14557.544468,0,0.0,5575,9361.0,12246
+NYC,5,H,LayeredDijkstra,Layered multi-source Dijkstra,50,234.193059,270.062826,0,0.0,5575,9361.0,12246
+NYC,5,H,ROSE,ROSE (RNII-guided reimplementation),50,>30000,>30000,81,0.54,5575,9361.0,12246
+NYC,5,L,DROMC,DROMC (existing Candidate-A* implementation),50,0.445679,0.455121,0,0.0,3,4.0,4
+NYC,5,L,FSSP,FSSP (certified geometric bound),50,0.363648,0.380248,0,0.0,3,4.0,4
+NYC,5,L,LayeredDijkstra,Layered multi-source Dijkstra,50,177.394957,202.759394,0,0.0,3,4.0,4
+NYC,5,L,ROSE,ROSE (RNII-guided reimplementation),50,0.335536,0.379267,0,0.0,3,4.0,4
+NYC,5,M,DROMC,DROMC (existing Candidate-A* implementation),50,482.704560,492.666324,0,0.0,493,525.0,618
+NYC,5,M,FSSP,FSSP (certified geometric bound),50,15.745403,42.386752,0,0.0,493,525.0,618
+NYC,5,M,LayeredDijkstra,Layered multi-source Dijkstra,50,214.480546,247.878592,0,0.0,493,525.0,618
+NYC,5,M,ROSE,ROSE (RNII-guided reimplementation),50,28.520896,1317.075127,0,0.0,493,525.0,618

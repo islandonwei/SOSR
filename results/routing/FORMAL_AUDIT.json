@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "raw_files": 12,
+  "measurements": 21600,
+  "unique_queries": 1800,
+  "paired_repetitions": 3,
+  "input_source_integrity_checked": true,
+  "results_sha256": "f7936583b5c938bd39a88537424fde4865cbc3bd57706d84e5eeb289fac51f62",
+  "identity_disclosure": "DROMC (existing Candidate-A* implementation)",
+  "finished": "2026-11-01T18:59:13.827773+08:00"
+}

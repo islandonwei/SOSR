@@ -1,0 +1,26 @@
+#!/bin/gnuplot
+set encoding iso_8859_1
+set out "16.eps"
+
+set size 1.00, 0.50
+set terminal postscript portrait enhanced mono "Helvetica" 22
+
+set ylabel "# of distance calls"
+set xlabel "{/Courier Qi}"
+set pointsize 2
+
+set key left bottom 
+
+set xtics 10.00
+set yrange [10.00 : 9000000.000000]
+set log y 10
+set format y '10^{%L}'
+set xrange [0 : 50]
+set xtics ("Q1" 5, "Q2" 15, "Q3" 25, "Q4" 35, "Q5" 45)
+
+plot "16.dat" using 1:2 title "FSSP-w/o Bounds" with linespoints linetype 1 pointtype 1,\
+"16.dat" using 1:3 title "FSSP" with linespoints linetype 1 pointtype 2
+
+
+unset output
+set size 1,1
