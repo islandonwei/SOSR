@@ -1,0 +1,50 @@
+[
+  {
+    "train_index": 257,
+    "query": "where's municipal stuff",
+    "id": "63be6904847c3692a84b9b9a",
+    "level": 1,
+    "alias": "C1097",
+    "path": "Community and Government"
+  },
+  {
+    "train_index": 2099,
+    "query": "find a company that transports passengers or goods from one place to another",
+    "id": "54541b70498ea6ccd0204bff",
+    "level": 2,
+    "alias": "C0711",
+    "path": "Travel and Transportation > Transportation Service"
+  },
+  {
+    "train_index": 842,
+    "query": "find a friendly local bar serving draught beer and simple food",
+    "id": "4bf58dd8d48988d11b941735",
+    "level": 3,
+    "alias": "C0053",
+    "path": "Dining and Drinking > Bar > Pub"
+  },
+  {
+    "train_index": 8532,
+    "query": "craving kibbeh nayyeh, tabbouleh, and food from Lebanon",
+    "id": "58daa1558bbb0b01f18ec1cd",
+    "level": 4,
+    "alias": "C0901",
+    "path": "Dining and Drinking > Restaurant > Middle Eastern Restaurant > Lebanese Restaurant"
+  },
+  {
+    "train_index": 2342,
+    "query": "where can I try Brazilian rice, beans, farofa, and regional dishes",
+    "id": "4bf58dd8d48988d16b941735",
+    "level": 5,
+    "alias": "C0148",
+    "path": "Dining and Drinking > Restaurant > Latin American Restaurant > South American Restaurant > Brazilian Restaurant"
+  },
+  {
+    "train_index": 1472,
+    "query": "I want Brazilian empadas filled with chicken or shrimp",
+    "id": "5294c55c3cf9994f4e043a61",
+    "level": 6,
+    "alias": "C0451",
+    "path": "Dining and Drinking > Restaurant > Latin American Restaurant > South American Restaurant > Brazilian Restaurant > Empada House"
+  }
+]

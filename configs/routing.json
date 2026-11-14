@@ -1,0 +1,45 @@
+{
+  "queries": 1800,
+  "repeats": 3,
+  "algorithms": [
+    "FSSP",
+    "ROSE",
+    "DROMC",
+    "LayeredDijkstra"
+  ],
+  "display_names": {
+    "FSSP": "FSSP (certified geometric bound)",
+    "ROSE": "ROSE (RNII-guided reimplementation)",
+    "DROMC": "DROMC (existing Candidate-A* implementation)",
+    "LayeredDijkstra": "Layered multi-source Dijkstra"
+  },
+  "datasets": [
+    "NYC",
+    "BAY",
+    "COL",
+    "FLA"
+  ],
+  "semantics": "Undirected original graph and raw_integer/10 weights; weakly ordered visits; repeated vertex and source/target may satisfy consecutive requirements. Original categories fixed, no HSM inference.",
+  "outputs": "Minimum distance plus ordered service vertices including endpoints. Equal-cost distinct service sequences are valid. Full road-walk reconstruction is not claimed or timed.",
+  "timing": "Inside isolated child: candidate lookup/copy, query-specific initialization, bounds/search, query-cache construction and service-vertex reconstruction, ending when the adapter returns. Cleanup of state retained in global/cache containers is outside this timer for every method, as is fork/IPC, graph/index setup, correctness verification and serialization. Same fresh query-state policy for every method.",
+  "timeout_ms": 30000,
+  "timeout_rule": "External per-query deadline. A timeout has planner_ms=null and censor_ms=30000. If a completed child reports >30000ms, retain it as an observed-after-budget censored run; never use 30000 as actual runtime.",
+  "indices": {
+    "FSSP": {
+      "representative_target": 100,
+      "grid_target": 100,
+      "spf_candidate_draws": 4,
+      "spf_topk": 2,
+      "seed": 42
+    },
+    "ROSE": {
+      "RNII_landmarks": 50,
+      "selection": "seed42 farthest-first, incremental nearest-landmark maintenance",
+      "storage": "dense landmark vectors for POIs, source/target vectors computed online when needed"
+    },
+    "DROMC_existing": "Original H2H candidate-A*; initial reset of query-dependent heuristic/destination tables and normalization of service-vertex output inside timer; query algorithm retained.",
+    "LayeredDijkstra": "Original graph, initial labels from prior DP; stop after all next-layer targets settle; final target wave; compact per-candidate predecessor storage."
+  },
+  "statistics": "Nearest-rank median/P95 over per-query median of 3 repetitions, preserving right censoring. Also publish each repetition separately and timeout runs/(3*n), any-timeout query count and censored-median count. Do not treat repeats as independent queries.",
+  "counter_reporting": "H2H calls for index methods; settled vertices/scanned edges for LayeredDijkstra. ROSE additionally reports candidate pair evaluations and refinements. Missing partial counts on timeout remain unknown; counters are not interchangeable work units."
+}

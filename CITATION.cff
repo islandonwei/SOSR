@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the SOSR manuscript when using these code and data artifacts."
+type: software
+title: "SOSR: HSM and FSSP Reproducibility Package"
+version: "2026.11.13"
+authors:
+  - family-names: Wang
+    given-names: Libin
+  - family-names: Wei
+    given-names: Jiaxiang
+  - family-names: Zhang
+    given-names: Yifei
+  - family-names: Tong
+    given-names: Yongxin
+  - family-names: Wong
+    given-names: Raymond Chi-Wing
+  - family-names: Shang
+    given-names: Xuequn
+  - family-names: Li
+    given-names: Zhanhuai

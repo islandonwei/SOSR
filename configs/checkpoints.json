@@ -1,0 +1,18 @@
+{
+  "hsm": {
+    "checkpoint_sha256": "be6bec7d9a3a307a38ea3536e58d435b287daeae684f3216a679bc4372ef62af",
+    "selected_epoch": 39
+  },
+  "no-contrastive": {
+    "checkpoint_sha256": "e5db34125018dc625fe9a46b592870f1394aa6f570cdf6ed6479e677b6049195",
+    "selected_epoch": 4
+  },
+  "no-level": {
+    "checkpoint_sha256": "d5bd10b1204583f329296d0e5a9e0cd6e81a667b63f39048f8f03b18d4dd9afd",
+    "selected_epoch": 13
+  },
+  "random-neg": {
+    "checkpoint_sha256": "c9a4b49865a4daace6765ee39a80417d60a4f9603e0ba804eaca810a6a29d572",
+    "selected_epoch": 8
+  }
+}

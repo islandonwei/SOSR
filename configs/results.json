@@ -1,0 +1,33 @@
+{
+  "url": "https://github.com/islandonwei/SOSR/releases/download/reproducibility-2026-11-13/SOSR-reference-results-20261114.zip",
+  "sha256": "f26e3dda8a752fdde3db0a682549c4b91890c3f2cb219e9ca8548812ed9a5c9c",
+  "size_bytes": 20120256,
+  "source_commit": "b6b042cc5b15e3c4fcaf7ce38d727db53fc338bf",
+  "files": {
+    "hsm/name_only/sentence-t.json": "ae0ce274881e0fd3b1df88c8299d06df7fedd9c5712c5f20bbc201ad8f9b4ebb",
+    "hsm/name_only/xlm-r.json": "582b7b55742a93e256703a8f86530125a38068465e2198c9e79cffe409aed1a2",
+    "hsm/predictions/hsm.npz": "3b44c740321fdf319c2e29adb0ca884adae16bce6a05f1692502743bcef797aa",
+    "hsm/predictions/no-contrastive.npz": "ac00f4221b18de5dc92bc659d789b3d478490f23057e42ca77cb3c641d8564fa",
+    "hsm/predictions/no-level.npz": "4fd7e20a486964045b507b26baba22e096035896781a7497294dbf53430dfbe9",
+    "hsm/predictions/qwen-city-few.npz": "05ffd56e81713e9eadb8dec7366418d6e7ffc739c6bada058d46d40aabfdc2b5",
+    "hsm/predictions/qwen-city-zero.npz": "bae2d5f4a3e52bd8a2b3dccf4878834493b16d49fafb8d9523a90905d44517dd",
+    "hsm/predictions/qwen-few.npz": "1156c4c54f187528aafca29fa4eab15096b783da1abf830ef81ebef8e3a7e9e9",
+    "hsm/predictions/qwen-zero.npz": "e2ef976719bf4278042ef749c9fe3a83386914fc458d0a94b7f8b8d822d4104b",
+    "hsm/predictions/random-neg.npz": "d097b4ae1013c965b0c9ddb433ae94a1dca1980bbbc717ced2c23b8d4de6c604",
+    "hsm/provenance.json": "59da987efc9678a6b25900e7e581c0a1370863782dd390d7577c3a1ddbd6fede",
+    "routing/FORMAL_AUDIT.json": "15954232113927da223c07db15a0b10b068a649bdc6bf025e02029cd61654107",
+    "routing/raw/r1_BAY.jsonl": "0ba914c5814714905852ed17f3f1669d2c37ba643772b5a7c0fcfedfd9ccb882",
+    "routing/raw/r1_COL.jsonl": "351d5459aa42b4690eb99bf5f57b0e82f49dc105600abbd875e543b03e18ae45",
+    "routing/raw/r1_FLA.jsonl": "001ad751883411d3c12ca1f70807559fe1987c6380843c0856bb9088066c2c69",
+    "routing/raw/r1_NYC.jsonl": "e32cbbe2814e793519ee31a9aafb26651d4c9f651444e17324a44471477a2bef",
+    "routing/raw/r2_BAY.jsonl": "c425d2358e46e501251995ff0bdda27ace523449567f66832b9bc34a88ac9d5c",
+    "routing/raw/r2_COL.jsonl": "7b0b7b100e6cecb43a93b3331592112958768b08c227892c64eeab2e5b2efb23",
+    "routing/raw/r2_FLA.jsonl": "6e13438c34017df4463e63c926f823be096483510af48db457467e7a98d155b2",
+    "routing/raw/r2_NYC.jsonl": "d02e0e17d908b19456d0db9e967ba52466c6cf8ca76ebc260dfb588e5685bd5d",
+    "routing/raw/r3_BAY.jsonl": "b69902e07605e3d0760a2e5b69c62888d95395905dfc2793b416d9d6c3a1e307",
+    "routing/raw/r3_COL.jsonl": "48d0fde55b1b2a204a064b5a0a31a63a9dca9e4ce980a10dd00ac91720d2bd52",
+    "routing/raw/r3_FLA.jsonl": "c4ad6407aa87a1ba19488cb639670c80cd8b813858ecf2a862b5decfdb204d48",
+    "routing/raw/r3_NYC.jsonl": "8b5cbd5e80d788fb03abe2fa661e063972fb50c5eaf57acd219c5d041921803f",
+    "routing/RESULTS.json": "f7936583b5c938bd39a88537424fde4865cbc3bd57706d84e5eeb289fac51f62"
+  }
+}

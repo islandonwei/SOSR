@@ -1,0 +1,30 @@
+{
+  "seed": 42,
+  "stage1_epochs": 0,
+  "stage2_epochs": 50,
+  "batch_size": 64,
+  "stage1_head_lr": 0.001,
+  "stage2_encoder_lr": 1e-05,
+  "stage2_head_lr": 0.002,
+  "contrastive_weight": 1.0,
+  "contrastive_temperature": 0.05,
+  "semantic_temperature": 0.01,
+  "label_smoothing": 0.1,
+  "cdf_weight": 0.5,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "max_grad_norm": 1.0,
+  "selection": "highest full validation MRR, earliest tie",
+  "pooling": "mean+l2",
+  "category_text": "category_name",
+  "negative_quotas": [
+    10,
+    5,
+    5
+  ],
+  "category_cache": "detached, refreshed before each stage2 epoch and validation",
+  "stage1_transition": "use final stage1 state, not stage1_best",
+  "variant": "no-level",
+  "level_loss": false,
+  "level_fusion": false
+}

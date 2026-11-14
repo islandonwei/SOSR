@@ -1,0 +1,97 @@
+{
+  "experiment": "cityinstruction_qwen_sft_20261020",
+  "claim": "Independent standard-SFT implementation of Qwen2.5-7B-Instruct + public CityInstruction-London. Not an author-supplied CityGPT checkpoint, not a claim of exact numerical reproduction, and not SWFT.",
+  "seed": 42,
+  "base_model": "models/Qwen2.5-7B-Instruct",
+  "official_base_revision_checked": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "base_weight_sha256": {
+    "model-00001-of-00004.safetensors": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+    "model-00002-of-00004.safetensors": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+    "model-00003-of-00004.safetensors": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+    "model-00004-of-00004.safetensors": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+  },
+  "upstream_code_revision": "ab8d19b57bdcc0833120d49958683c28baf399d7",
+  "data": {
+    "path": "data/cityinstruction/citygpt-London-v24.6-SF-v2.3-alpaca.json",
+    "sha256": "a01998fa655d51248700f2ec9bc144ebcdd080d6b582b533470356f8db7a3368",
+    "records_before_processing": 138785,
+    "official_archive_sha256": "0aa1be9d6e4c28c00e071b1498e4307400cd9c45854e67ea7075dadced7bef74",
+    "official_dataset_revision": "09f108b3d870ba6c0fb279d7aec2caa8ddd47b4c",
+    "city_rationale": "One English-city public corpus, fixed before target validation. No city choice or data selection based on SOSR validation/test accuracy.",
+    "additional_general_data": false,
+    "preserve_source_duplicates": true,
+    "split": "Group by SHA256 of canonical system/history/instruction/input (excluding final answer); SHA256('42|'+group_hash) modulo 1000 below 100 is domain validation, otherwise training. Identical prompts cannot cross the split.",
+    "training_subset": "All valid training-part records, one epoch; no 12k/30k subsampling.",
+    "domain_validation_probe": "First 512 valid validation records ordered by (group_hash, original_index); diagnostic loss only, not checkpoint selection.",
+    "target_sosr_files_used_in_training": false,
+    "test_evaluation_authorized_by_this_plan": false
+  },
+  "tokenization": {
+    "template": "Unmodified local official Qwen chat template",
+    "preserve_history": true,
+    "train_on_prompt": false,
+    "supervise": "All tokens fully contained in assistant content/closing-separator character spans, using fast-tokenizer offsets on the single rendered full conversation. Tokens crossing an assistant/header boundary are masked, as are all system/user/header tokens.",
+    "prepared_directory": "prepared_v2",
+    "cutoff_len": 4096,
+    "truncation": "Right truncate after full conversation encoding; record all truncation. Exclude only rows with zero surviving supervised next-token targets.",
+    "packing": false,
+    "workers": 8
+  },
+  "training": {
+    "finetuning_type": "full",
+    "epochs": 1,
+    "learning_rate": 1e-05,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.0,
+    "scheduler": "cosine",
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0,
+    "world_size": 4,
+    "per_device_micro_batch": 1,
+    "gradient_accumulation": 16,
+    "global_batch_records": 64,
+    "last_batch": "Use all remaining records exactly once; zero-weight dummy microbatches only to align distributed collectives, never duplicate contributions.",
+    "objective": "Global supervised-token mean cross entropy per optimizer update; FP32 gradient reduction.",
+    "distribution": "Native PyTorch FSDP full sharding, per Qwen2 decoder block",
+    "precision": "FP32 master parameters and Adam states; BF16 forward/backward computation; FP32 reduction",
+    "gradient_checkpointing": "Non-reentrant",
+    "attention": "PyTorch SDPA",
+    "shuffle": "Fixed seed42 NumPy generator permutation of prepared training indices",
+    "checkpoint_fractions": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "checkpoint_selection": "Final one-epoch checkpoint only, fixed before validation. Intermediate model-only checkpoints are for audit, not target-metric selection.",
+    "resume_policy": "No automatic restart or continuation from model-only checkpoints.",
+    "determinism": "Fixed random seeds and recorded software; not a promise of bitwise identity across GPUs/software versions."
+  },
+  "implementation_differences": [
+    "Independent trainer using current installed PyTorch/Transformers rather than the author's old LLaMA-Factory/DeepSpeed runtime.",
+    "Qwen base model and London public corpus are explicitly selected; the supplied upstream example YAML targets Llama3 and a different city.",
+    "Learning rate/epoch/global batch/cutoff/cosine/warmup are borrowed from the inspected full-SFT example as a declared recipe, not claimed to be confirmed original-Qwen hyperparameters.",
+    "Non-packed samples and deterministic prompt-group validation split instead of silently inheriting upstream packing/random-split defaults.",
+    "No extra generic instruction mixture is appended to the already mixed public corpus.",
+    "No SWFT weighting, no SOSR supervised task fine-tuning, no model architecture changes."
+  ],
+  "preflight": {
+    "required": [
+      "source_integrity",
+      "token_masks",
+      "split_disjointness",
+      "gradient_normalization",
+      "distributed_tiny_equivalence",
+      "real_model_memory_and_save_reload"
+    ],
+    "max_real_model_optimizer_steps": 2,
+    "real_model_preflight_updates_discarded": true,
+    "formal_training_reloads_original_base": true,
+    "failure_policy": "Preserve attempt directory and logs, stop; implementation fixes require a new preflight attempt, not silent scientific-setting changes."
+  }
+}

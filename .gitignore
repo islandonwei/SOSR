@@ -218,3 +218,45 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SOSR experiment artifacts
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.env
+.env.*
+!.env.example
+.DS_Store
+.ipynb_checkpoints/
+runs/
+build/
+routing/build/
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.u32
+*.i32
+*.log
+*.tar.gz
+*.zip
+models/
+data/roads/*
+!data/roads/manifest.json
+data/cityinstruction/
+baselines/qwen_city/PLAN.json
+baselines/qwen_city/prepared*/
+baselines/qwen_city/train_run/
+baselines/qwen_city/preflight_run/
+
+# Generated manuscript figures
+figures/archived/*.eps
+
+# Downloaded reference records are stored under runs/reference/.
+results/hsm/predictions/
+results/hsm/name_only/
+results/hsm/provenance.json
+results/routing/raw/
+results/routing/RESULTS.json
+results/routing/FORMAL_AUDIT.json

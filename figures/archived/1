@@ -1,0 +1,28 @@
+#!/bin/gnuplot
+
+set out "1.eps"
+
+set size 1.00, 0.50
+set terminal postscript portrait enhanced mono "Helvetica" 22
+
+set ylabel "Query time ({ms)"
+set xlabel "{/Courier Q_i}"
+set pointsize 2
+
+set key at 40,350
+
+set xtics 10.00
+set yrange [1 : 400.00000000]
+set log y 10
+set format y '10^{%L}'
+set xrange [0 : 50]
+set xtics ("Q_1" 5, "Q_2" 15, "Q_3" 25, "Q_4" 35, "Q_5" 45)
+
+plot "1.dat" using 1:2 title "ROSE" with linespoints linetype 1 pointtype 8,\
+"1.dat" using 1:3 title "DROMC" with linespoints linetype 1 pointtype 2,\
+"1.dat" using 1:4 title "FSSP" with linespoints linetype 1 pointtype 4
+
+
+unset output
+set size 1,1
+

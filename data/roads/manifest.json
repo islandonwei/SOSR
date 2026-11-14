@@ -1,0 +1,82 @@
+{
+  "NYC/USA-road-d.NYC.gr": {
+    "sha256": "37f5b3eff82330850466956b6c036a8ab8551512bdc7509edca1d4c6cf943fa3",
+    "bytes": 14437459
+  },
+  "NYC/USA-road-d.NYC.co": {
+    "sha256": "b810f32f9661625882104463fd510b60ce3ca1089d406cba35384b86987deda7",
+    "bytes": 7290774
+  },
+  "NYC/order.txt": {
+    "sha256": "a30efd4829780e87fec2e1b2d48f0a5b6615cc8ac46fb4d2dc2f46a867fd26b6",
+    "bytes": 1739312
+  },
+  "NYC/poi_node_mapping.txt": {
+    "sha256": "48cd189694946a7346840c3e17038403314032b347a6d1b55e83e7f9daf8b29a",
+    "bytes": 13547095
+  },
+  "NYC/Categories_ID.txt": {
+    "sha256": "cb6f76666bd94235f0cdf9009a22afc3ec2badfc4f3e272b35413da571f4b428",
+    "bytes": 21002
+  },
+  "BAY/USA-road-d.BAY.gr": {
+    "sha256": "75a1a78d1f1bd1d8d86b2dc81b0c2ac30f701e078c514c9f9b953130b83f979e",
+    "bytes": 15851432
+  },
+  "BAY/USA-road-d.BAY.co": {
+    "sha256": "5446a3b07e99a6fbf2aa091bd7095b55e4ba77bb94ac9865133b6b9af98af153",
+    "bytes": 9205924
+  },
+  "BAY/order.txt": {
+    "sha256": "2c3a7f0368a5e9707632cf926f2e56faebe65e8a67d8294718bed95c235ea320",
+    "bytes": 2459050
+  },
+  "BAY/poi_node_mapping.txt": {
+    "sha256": "f0667adce718eccea0a97bd0006623ac78f7268ef5254499ff7f74bb001cb5d5",
+    "bytes": 8511619
+  },
+  "BAY/Categories_ID.txt": {
+    "sha256": "eebe0fb0cf4f673acea92412a8e6e22bc7e6e10d491041254b9a537a1aee180c",
+    "bytes": 20809
+  },
+  "COL/USA-road-d.COL.gr": {
+    "sha256": "2d5510bdc742cf027c0ce90f5d9eebeace29c7431f54f31be015d2ddac070343",
+    "bytes": 21344630
+  },
+  "COL/USA-road-d.COL.co": {
+    "sha256": "1c545e75ef66d25fb8a2478a5395b3b0bd16e7fb463236a97f25718c89226ba4",
+    "bytes": 12523408
+  },
+  "COL/order.txt": {
+    "sha256": "01e4421faab5e3ea4c421d4613db93907d43d27ec0aab8060e294fea2e1f73de",
+    "bytes": 2938552
+  },
+  "COL/poi_node_mapping.txt": {
+    "sha256": "68cc55425f2215442de59f7f252982e3bac4a7013a01394199812808b9dba3fa",
+    "bytes": 4920574
+  },
+  "COL/Categories_ID.txt": {
+    "sha256": "0366a0191e382d6337de2a22a263283a902ecb7b37cc7ed0bdb734bbaf758c4b",
+    "bytes": 19743
+  },
+  "FLA/USA-road-d.FLA.gr": {
+    "sha256": "47a3e851dea2bf27d6c939542e569fa9b5e6f2c8f11e8af3187d87c28435a85d",
+    "bytes": 55645328
+  },
+  "FLA/USA-road-d.FLA.co": {
+    "sha256": "e9ef8ff417f2e0b19faf51918b87f7e77d99269fa95726d105fdf47cd893e90d",
+    "bytes": 29930001
+  },
+  "FLA/order.txt": {
+    "sha256": "ed3108b63daa87870f87aab749426122979ece7008a5f8177b3e7f889a62582b",
+    "bytes": 7451898
+  },
+  "FLA/poi_node_mapping.txt": {
+    "sha256": "34abc20c305d084059d7afe75582310cefd13888e79a335f198a7f539414c91a",
+    "bytes": 19615221
+  },
+  "FLA/Categories_ID.txt": {
+    "sha256": "76d0543cda0fd9c2e8f08ed608740bb378227d9b6ff2e8512ad00233ee370e25",
+    "bytes": 20927
+  }
+}
